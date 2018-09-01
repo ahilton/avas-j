@@ -21,10 +21,15 @@
 
 /*
 
+@headerFont        : 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@googleFontName    : 'Anton';
+
+@importGoogleFonts : true;
+
 @pageMinWidth  : 1049px;
 @pageOverflowX : visible;
 
-@importGoogleFonts : false;
 
 @bigSize : (18 / 13);
 

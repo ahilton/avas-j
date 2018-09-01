@@ -8,25 +8,44 @@
 /*background: rgba(29, 10, 18, 0.64);*/
 /*color: rgba(255,255,255,.9);*/
 /*}*/
+/*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');*/
+/*@import url('https://fonts.googleapis.com/css?family=Anton|Nanum+Gothic');*/
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Poppins');
 .homeHeader.ui.inverted.segment {
     background-color: #41BAAE;
 }
 
+.homeHeader .ui.fixed.menu {
+    background-color: #B6E8E3;
+}
+
 .homeHeader .ui.inverted.menu {
     border: none;
-    /*border-bottom: none;*/
 }
 .homeHeader .ui.secondary.inverted.pointing.menu {
     border: none;
-    /* border-color: rgba(34,36,38,.15); */
 }
 
 .homeHeader h3.ui.header {
-    font-size: 1.9em;
-    color: #222;
+    font-size: 2.0em;
+    color: #222222;
+    font-family:  'Gloria Hallelujah', 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serifq;
+}
+
+.homeHeader .ui b {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    /*color:white;*/
+    background-color: #8DD1CA;
 }
 
 .ava-intro.ui.segment {
     font-size: 1.1em;
+}
 
+.homeHeader .ui.button {
+    background-color: #F3E598;
+}
+.homeHeader .ui.button:hover {
+    background-color: #EDD23B;
 }

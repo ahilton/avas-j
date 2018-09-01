@@ -23,7 +23,7 @@ const AvaIntro = ({ mobile }) => (
                         Ava's Journey
                     </Header>
                     <p>
-                        Just 2 weeks after her 2nd birthday, Ava was diagnosed with Stage 4 High Risk Neuroblastoma - a rare very aggressive childhood cancer with a low survival rate and high change of relapse.
+                        Just 2 weeks after her 2nd birthday, Ava was diagnosed with Stage 4 High Risk Neuroblastoma - a rare, very aggressive childhood cancer with a low survival rate and high change of relapse.
                     </p>
                     <p>
                         A relapse leaves limited treatment options and is almost always terminal.
@@ -32,13 +32,15 @@ const AvaIntro = ({ mobile }) => (
                         Fundraising
                     </Header>
                     <p >
-                        Ava’s best hope is to receive a new treatment only available from Sloan Kettering Hospital in New York City
+                        Ava’s best hope is to receive a new treatment only available from Sloan Kettering Hospital in New York City.
                     </p>
                     <p>
-                        We were stunned and horrified to learn that the treatment and associated costs are estimated at $300,000, but we are determined to raise the money for our baby girl.
+                        We were stunned and horrified to learn that the treatment and associated costs are estimated at <b>$300,000</b>, but we are determined to raise the money for our baby girl.
                     </p>
-                    <Container textAlign='center' style={{marginTop:'2.2em'}}>
-                        <Button size='huge'>Donate Now</Button>
+                    <Container textAlign='center' style={{marginTop:'2.5em'}}>
+                        <Button size='huge' style={{
+                            marginRight:'1em'
+                        }}>Donate Now</Button>
                         <Button inverted size='huge'>Read More...</Button>
                     </Container>
                 </Grid.Column>

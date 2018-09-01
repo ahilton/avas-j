@@ -19,7 +19,6 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from "./container/DesktopContainer";
 import MobileContainer from "./container/MobileContainer";
-import AvaIntro from "./component/AvaIntro";
 
 const ResponsiveContainer = ({ children }) => (
     <div>
@@ -34,7 +33,6 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
-        <AvaIntro/>
 
         <Segment style={{ padding: '0em' }} vertical>
             <Grid celled='internally' columns='equal' stackable>

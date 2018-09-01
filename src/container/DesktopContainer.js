@@ -46,6 +46,7 @@ class DesktopContainer extends Component {
                             pointing={!fixed}
                             secondary={!fixed}
                             size='large'
+                            borderless
                         >
                             <Container>
                                 <Menu.Item as='a' active>
@@ -54,22 +55,32 @@ class DesktopContainer extends Component {
                                 <Menu.Item as='a'>Gala</Menu.Item>
                                 <Menu.Item as='a'>Events</Menu.Item>
                                 <Menu.Item as='a'>Press</Menu.Item>
-                                <Menu.Item position='right'>
-                                    {/*<Button as='a' inverted={!fixed}>*/}
-                                        {/*Donate Now*/}
-                                    {/*</Button>*/}
+                                {fixed && <Menu.Item position='right'>
 
-                                    {/*<Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>*/}
-                                    {/*Sign Up*/}
-                                    {/*</Button>*/}
+                                </Menu.Item>}
+                                {fixed && <Menu.Item position='right' >
+                                    <Button as='a' inverted={!fixed} style={{marginRight:'10em'}}>
+                                        Donate
+                                    </Button>
                                     <img src={logo}
-                                           style={{position:'absolute',
-                                               width:'20em',
-                                               left:'-14em'
-                                           }}
+                                         style={{
+                                             position: 'absolute',
+                                             width: '11em',
+                                             bottom:'-1em',
+                                             left: '10em'
+                                         }}
                                     />
+                                </Menu.Item>}
 
-                                </Menu.Item>
+                                {!fixed && <Menu.Item position='right'>
+                                        <img src={logo}
+                                             style={{
+                                                 position: 'absolute',
+                                                 width: '20em',
+                                                 left: '-14em'
+                                             }}
+                                        />
+                                </Menu.Item>}
                             </Container>
                         </Menu>
                         <AvaIntro />
