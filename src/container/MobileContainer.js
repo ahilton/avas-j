@@ -9,7 +9,7 @@ import {
     Segment,
     Sidebar,
 } from 'semantic-ui-react'
-import HomepageHeading from "../component/HomepageHeading";
+import AvaIntro from "../component/AvaIntro";
 
 
 class MobileContainer extends Component {
@@ -66,7 +66,8 @@ class MobileContainer extends Component {
                                     </Menu.Item>
                                 </Menu>
                             </Container>
-                            <HomepageHeading mobile />
+                            <AvaIntro mobile/>
+
                         </Segment>
 
                         {children}

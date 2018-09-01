@@ -4,7 +4,7 @@
 
 @emSize: 13px;
 @fontSize : 13px;
-@fontName : 'Arial';
+/*@fontName : 'Arial';*/
 
 /* Colors */
 @blue: #97DEFF;
@@ -14,6 +14,10 @@
 @black: #000000;
 @primaryColor: #41BAAE;
 @secondaryColor: @black;
+
+/* Hack - in order to disable large monitor display*/
+@largeMonitorBreakpoint: 30049px;
+
 
 /*
 
@@ -39,7 +43,6 @@
 @internalBorderColor: rgba(0, 0, 0, 0.06);
 @selectedBorderColor: #51A7E8;
 
-@largeMonitorBreakpoint: 1049px;
 @computerBreakpoint: @largeMonitorBreakpoint;
 @tabletBreakpoint: @largeMonitorBreakpoint;
 

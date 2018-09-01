@@ -1,10 +1,32 @@
 /*body {*/
-  /*margin: 0;*/
-  /*padding: 0;*/
-  /*font-family: sans-serif;*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*font-family: sans-serif;*/
 /*}*/
 
 /*.ui.inverted.segment, .ui.primary.inverted.segment {*/
-    /*background: rgba(29, 10, 18, 0.64);*/
-    /*color: rgba(255,255,255,.9);*/
+/*background: rgba(29, 10, 18, 0.64);*/
+/*color: rgba(255,255,255,.9);*/
 /*}*/
+.homeHeader.ui.inverted.segment {
+    background-color: #41BAAE;
+}
+
+.homeHeader .ui.inverted.menu {
+    border: none;
+    /*border-bottom: none;*/
+}
+.homeHeader .ui.secondary.inverted.pointing.menu {
+    border: none;
+    /* border-color: rgba(34,36,38,.15); */
+}
+
+.homeHeader h3.ui.header {
+    font-size: 1.9em;
+    color: #222;
+}
+
+.ava-intro.ui.segment {
+    font-size: 1.1em;
+
+}

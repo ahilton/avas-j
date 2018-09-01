@@ -2,13 +2,16 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import {
     Button,
-    Container,
+    Container, Image,
     Menu,
     Responsive,
     Segment,
     Visibility,
 } from 'semantic-ui-react'
-import HomepageHeading from "../component/HomepageHeading";
+import AvaIntro from "../component/AvaIntro";
+
+var logo = require('../img/logo-t.png')
+
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -33,7 +36,7 @@ class DesktopContainer extends Component {
                 >
                     <Segment
                         inverted
-                        textAlign='center'
+                        className='homeHeader'
                         // style={{ minHeight: 500, padding: '1em 0em' }}
                         vertical
                     >
@@ -52,16 +55,24 @@ class DesktopContainer extends Component {
                                 <Menu.Item as='a'>Events</Menu.Item>
                                 <Menu.Item as='a'>Press</Menu.Item>
                                 <Menu.Item position='right'>
-                                    <Button as='a' inverted={!fixed}>
-                                        Donate Now
-                                    </Button>
+                                    {/*<Button as='a' inverted={!fixed}>*/}
+                                        {/*Donate Now*/}
+                                    {/*</Button>*/}
+
                                     {/*<Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>*/}
                                     {/*Sign Up*/}
                                     {/*</Button>*/}
+                                    <img src={logo}
+                                           style={{position:'absolute',
+                                               width:'20em',
+                                               left:'-14em'
+                                           }}
+                                    />
+
                                 </Menu.Item>
                             </Container>
                         </Menu>
-                        <HomepageHeading />
+                        <AvaIntro />
                     </Segment>
                 </Visibility>
 
