@@ -11,6 +11,8 @@ import {
 } from 'semantic-ui-react'
 import AvaIntro from "../component/AvaIntro";
 
+var logo = require('../img/logo-t.png')
+
 
 class MobileContainer extends Component {
     state = {}
@@ -48,7 +50,8 @@ class MobileContainer extends Component {
                         <Segment
                             inverted
                             textAlign='center'
-                            style={{ minHeight: 350, padding: '1em 0em' }}
+                            className='homeHeader'
+                            // style={{ minHeight: 350, padding: '1em 0em' }}
                             vertical
                         >
                             <Container>
@@ -56,13 +59,15 @@ class MobileContainer extends Component {
                                     <Menu.Item onClick={this.handleToggle}>
                                         <Icon name='sidebar' />
                                     </Menu.Item>
-                                    <Menu.Item position='right'>
-                                        <Button as='a' inverted>
-                                            Log in
-                                        </Button>
-                                        <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                                            Sign Up
-                                        </Button>
+                                    <Menu.Item position='right' >
+                                        <img src={logo}
+                                             style={{
+                                                 position: 'absolute',
+                                                 width: '14em',
+                                                 bottom:'-2em',
+                                                 left: '-12em'
+                                             }}
+                                        />
                                     </Menu.Item>
                                 </Menu>
                             </Container>

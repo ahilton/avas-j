@@ -16,7 +16,11 @@
 }
 
 .homeHeader .ui.fixed.menu {
-    background-color: #B6E8E3;
+    background-color: #41BAAE;
+    color: white;
+}
+.homeHeader .ui.fixed.menu .item {
+    color: white;
 }
 
 .homeHeader .ui.inverted.menu {

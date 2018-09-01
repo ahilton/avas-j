@@ -33,7 +33,6 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
-
         <Segment style={{ padding: '0em' }} vertical>
             <Grid celled='internally' columns='equal' stackable>
                 <Grid.Row textAlign='center'>
