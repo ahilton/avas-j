@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import {Grid, Image, Label, Segment, Statistic,} from 'semantic-ui-react'
+import {Grid, Image, Label, Responsive, Segment, Statistic,} from 'semantic-ui-react'
+import FundraisingEvent from "./FundraisingEvent";
 
 var fundraiseYogaImg = require('../img/fundraising-community-yoga.jpg')
 
@@ -15,7 +16,7 @@ class Thermometer extends Component {
 
         return (
 
-            <Segment clearing basic className='thermometerSegment' style={{
+            <Segment clearing raised className='thermometerSegment' style={{
                 backgroundColor:'#f4f4f4',
                 zIndex:-100
             }}>
@@ -58,49 +59,43 @@ class Thermometer extends Component {
                             </Segment>
                         </div>
 
-                        <div className='thermometerContainer thermometerBottomContainer'>
-                        </div>
+                        <Responsive minWidth={Responsive.onlyComputer.minWidth} style={{
+                            zIndex:-300
+                        }}>
+                            <div className='thermometerContainer thermometerBottomContainer'/>
+
+                        </Responsive>
+                        <Responsive maxWidth={Responsive.onlyTablet.maxWidth}>
+                            <div className='thermometerContainer thermometerMobileBottomContainer'/>
+
+                        </Responsive>
 
                     </Grid.Column>
 
-                    <Grid.Column verticalAlign='middle' width={rightColSize} style={{ height:'100%'}}>
-                        <Segment stretched basic>
-                            <h1 style={{
-                                fontSize: '3.5em',
-                                marginTop:20,
-                                color:'#aaa',
-                                // fontFamily:  'Poppins, Open Sans, Helvetica Neue, Arial, Helvetica, sans-serif',
-                                fontFamily: 'Lato, Helvetica Neue,Arial,Helvetica,sans-serif',
-                                fontWeight: 100
-                            }}>
-                                Fundraising Tracker
-                            </h1>
-                        </Segment>
+                    <Grid.Column verticalAlign='middle' width={rightColSize}>
 
-                        <Grid.Row stretched>
+                        <Responsive minWidth={Responsive.onlyComputer.minWidth}>
+                            <Segment verticalAlign='top' basic>
+                                <h1 style={{
+                                    fontSize: '3.0em',
+                                    marginTop:0,
+                                    marginBottom:20,
+                                    color:'#888',
+                                    // fontFamily:  'Poppins, Open Sans, Helvetica Neue, Arial, Helvetica, sans-serif',
+                                    fontFamily: 'Lato, Helvetica Neue,Arial,Helvetica,sans-serif',
+                                    fontWeight: 100
+                                }}>
+                                    Fundraising Tracker
+                                </h1>
+                            </Segment>
+                        </Responsive>
 
-                            <Segment clearing padding basic textAlign='left' style={{
-                                backgroundColor: 'white',
-                                border: '15px solid #97DEFF',
-                                borderRadius: 20
-                            }}>
-                                <Label as='a' color='orange' ribbon='right'>
-                                    <Statistic inverted size='tiny'>
-                                        <Statistic.Value>$7,400</Statistic.Value>
-                                        <Statistic.Label>Raised</Statistic.Label>
-                                    </Statistic>
-                                </Label>
-
-                                <Segment stretched basic style={{marginTop: -50}}>
-                                {/*<div style={{marginTop: -40}}>*/}
-                                    <h1 style={{marginBottom: 30}}>
-                                        Community Fundriaser
-                                    </h1>
-                                    <Image
-                                        size='medium'
-                                        floated='right'
-                                        // fluid
-                                        src={fundraiseYogaImg}/>
+                            <FundraisingEvent {...{
+                                amount: '$7,400',
+                                title: 'Community Fundriaser',
+                                imageSrc: fundraiseYogaImg,
+                                color: '#97DEFF',
+                                content: <div>
                                     <p>
                                         Community Fundraiser for Ava’s Journey was a great success!
                                         Such wonderful people from all across Bayside came together to support her and
@@ -114,10 +109,8 @@ class Thermometer extends Component {
                                         Here she is enjoying a spot of #pilates with Chris from @weloveyoursoul who
                                         kindly donated his time and skills to teach group Pilates classes at the event!
                                     </p>
-                                </Segment>
-                                {/*</div>*/}
-                            </Segment>
-                        </Grid.Row>
+                                </div>
+                            }}/>
                     </Grid.Column>
                 </Grid>
             </Segment>
