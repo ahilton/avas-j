@@ -61,7 +61,9 @@ h3.ui.header{
 
 
 .ui.segment.thermometerSegment{
-    margin-bottom: 100px;
+    margin-top: 0;
+    /*margin-bottom: 100px;*/
+    padding: 3em 3em;
 }
 .thermometerGrid{
     margin-top: 150px;
@@ -80,16 +82,18 @@ h3.ui.header{
     min-width: 120px;
     width: 120px;
     margin: 0 auto 0 auto;
-    border:10px solid #eee;
+    border:10px solid #ddd;
     border-bottom: 0;
     border-top: 0;
     /*border-rRadius:10*/
 }
 .thermometerTopContainer{
-    zIndex:-20
+    height:35%;
+    z-index:-20
 }
 .thermometerMainContainer{
-    zIndex:-50
+    height:65%;
+    z-index:-50
 }
 .thermometerBottomContainer{
     max-width: 140px;
@@ -100,7 +104,7 @@ h3.ui.header{
     height: 140px;
     border-radius: 75px;
     background-color: #E99F86;
-    border:10px solid #eee;
+    border:10px solid #ddd;
     /*border-top: 0;*/
     margin-top: -37px;
     z-index: -100;
@@ -111,10 +115,7 @@ h3.ui.header{
     border-radius: 0px;
     border:none
 }
-/*.ui.segment.thermometerBlock:first-child{*/
-    /*border-top-left-radius: 10px;*/
-    /*border-top-right-radius: 10px;*/
-/*}*/
+
 .thermometerMainContainer .ui.segment.thermometerBlock:nth-child(1){
     background-color: #97DEFF;
 }
@@ -124,25 +125,20 @@ h3.ui.header{
 .thermometerMainContainer .ui.segment.thermometerBlock:nth-child(3){
     background-color: #E99F86;
 }
-.ui.segment.thermometerBlockBase{
-    /*border-bottom-left-radius: 10px;*/
-    /*border-bottom-right-radius: 10px;*/
-
-    position:relative;
-    top:-34px;
-    left:-25px;
-    width:150px;
-    height:150px;
-    min-width:150px;
-    min-height:150px;
-    max-width:150px;
-    max-height:150px;
-    background-color: #E99F86;
-    border:10px solid #eee;
-    z-index:-100
-}
 
 .thermometerGrid.ui.grid>.row{
     padding-top:0;
     padding-bottom:0;
+}
+.thermometerTopContainer .ui.statistic .label{
+    font-weight: 300;
+    font-size: 0.7em;
+}
+.thermometerPointer {
+    width: 300px;
+    height: 15px;
+    min-height: 15px;
+    background-color: #97DEFF;
+    position: absolute;
+    left: 50px
 }
