@@ -40,15 +40,36 @@ class DesktopContainer extends Component {
                         // style={{ minHeight: 500, padding: '1em 0em' }}
                         vertical
                     >
+                        {!fixed &&
+                        <Container
+                            style={{}}
+                        >
+                            <div style={{
+                                position:'absolute',
+                                width:'inherit'
+                            }}>
+                            <img src={logo}
+                                 style={{
+                                     position: 'absolute',
+                                     width: '24em',
+                                     right: '-3em',
+                                     top: '-5.5em'
+                                 }}
+                            />
+                            </div>
+                        </Container>
+                        }
                         <Menu
                             fixed={fixed ? 'top' : null}
                             inverted={!fixed}
                             pointing={!fixed}
                             secondary={!fixed}
                             size='large'
+                            style={{marginTop:0}}
                             borderless
                         >
                             <Container>
+
                                 <Menu.Item as='a' active>
                                     Home
                                 </Menu.Item>
@@ -72,15 +93,7 @@ class DesktopContainer extends Component {
                                     />
                                 </Menu.Item>}
 
-                                {!fixed && <Menu.Item position='right'>
-                                        <img src={logo}
-                                             style={{
-                                                 position: 'absolute',
-                                                 width: '20em',
-                                                 left: '-14em'
-                                             }}
-                                        />
-                                </Menu.Item>}
+
                             </Container>
                         </Menu>
                         <AvaIntro />

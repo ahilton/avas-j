@@ -53,3 +53,18 @@
 .homeHeader .ui.button:hover {
     background-color: #EDD23B;
 }
+
+
+.thermometerSegment{
+
+}
+.thermometerGrid{
+    height: 600px;
+    min-height: 600px;
+}
+.thermometerThinColumn{
+    background-color: red;
+}
+.thermometerFatColumn{
+
+}

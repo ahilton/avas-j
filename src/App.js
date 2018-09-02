@@ -19,6 +19,7 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from "./container/DesktopContainer";
 import MobileContainer from "./container/MobileContainer";
+import Thermometer from "./component/Thermometer";
 
 const ResponsiveContainer = ({ children }) => (
     <div>
@@ -33,6 +34,9 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
+
+        <Thermometer/>
+
         <Segment style={{ padding: '0em' }} vertical>
             <Grid celled='internally' columns='equal' stackable>
                 <Grid.Row textAlign='center'>
