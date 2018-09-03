@@ -7,19 +7,98 @@ var fundraiseYogaImg = require('../img/fundraising-community-yoga.jpg')
 
 class Thermometer extends Component {
 
+    state = {fundraisingBlockIndex: 0}
+
+    fundraisingBlocks = [
+        {
+            height:'20%',
+            amount: '$8,125',
+            title: 'Community Fundraiser',
+            imageSrc: fundraiseYogaImg,
+            color: '#97DEFF',
+            content: <div>
+                <p>
+                    Community Fundraiser for Ava’s Journey was a great success!
+                    Such wonderful people from all across Bayside came together to support her and
+                    it was just wonderful!
+                </p>
+                <p>
+                    Thank you to all, and @kingstonartsau for holding the event! 🤗 The wonder girl
+                    herself made an appearance for a couple of hours and had an amazing time!
+                </p>
+                <p>
+                    Here she is enjoying a spot of #pilates with Chris from @weloveyoursoul who
+                    kindly donated his time and skills to teach group Pilates classes at the event!
+                </p>
+            </div>
+        },{
+            height:'30%',
+            amount: '$64,400',
+            title: 'Donations',
+            imageSrc: fundraiseYogaImg,
+            color: '#8DD1CA',
+            content: <div>
+                <p>
+                    Community Fundraiser for Ava’s Journey was a great success!
+                    Such wonderful people from all across Bayside came together to support her and
+                    it was just wonderful!
+                </p>
+                <p>
+                    Thank you to all, and @kingstonartsau for holding the event! 🤗 The wonder girl
+                    herself made an appearance for a couple of hours and had an amazing time!
+                </p>
+                <p>
+                    Here she is enjoying a spot of #pilates with Chris from @weloveyoursoul who
+                    kindly donated his time and skills to teach group Pilates classes at the event!
+                </p>
+            </div>
+        },{
+            height:'50%',
+            amount: '$64,400',
+            title: 'Donations',
+            imageSrc: fundraiseYogaImg,
+            color: '#E99F86',
+            content: <div>
+                <p>
+                    Community Fundraiser for Ava’s Journey was a great success!
+                    Such wonderful people from all across Bayside came together to support her and
+                    it was just wonderful!
+                </p>
+                <p>
+                    Thank you to all, and @kingstonartsau for holding the event! 🤗 The wonder girl
+                    herself made an appearance for a couple of hours and had an amazing time!
+                </p>
+                <p>
+                    Here she is enjoying a spot of #pilates with Chris from @weloveyoursoul who
+                    kindly donated his time and skills to teach group Pilates classes at the event!
+                </p>
+            </div>
+        }
+    ]
+
+    setActiveFundraisingBlock = (index) => this.setState({ fundraisingBlockIndex: index })
+
     render() {
         // const {children} = this.props
         // const {fixed} = this.state
+
+        const { fundraisingBlockIndex } = this.state
+
+        const fundraisingBlock = fundraisingBlockIndex?this.fundraisingBlocks[fundraisingBlockIndex]:this.fundraisingBlocks[0]
+
+
+        var blocks = this.fundraisingBlocks.map((block, index) =>
+            <Segment basic className='thermometerBlock' style={{height: block.height}} onMouseEnter={()=>this.setActiveFundraisingBlock(index)}>
+                {fundraisingBlockIndex === index && <div className='thermometerPointer' style={{backgroundColor: block.color}}/>}
+            </Segment>
+        )
 
         var leftColSize = 5
         var rightColSize = 11
 
         return (
 
-            <Segment clearing raised className='thermometerSegment' style={{
-                backgroundColor:'#f4f4f4',
-                zIndex:-100
-            }}>
+            <Segment clearing raised className='thermometerSegment'>
                 <Grid stretched centered container className='thermometerGrid'>
                     <Grid.Column textAlign='center' width={leftColSize}>
                         <div className='thermometerContainer thermometerTopContainer'>
@@ -35,7 +114,7 @@ class Thermometer extends Component {
                             </Segment>
                             <Segment basic className='thermometerBlock' style={{
                                 height: '40%',
-                                zIndex: 1,
+                                // zIndex: 1,
                                 backgroundColor: '#97DEFF'
                             }}>
                                 <Label size='massive' color='black' ribbon>
@@ -48,26 +127,14 @@ class Thermometer extends Component {
                         </div>
 
                         <div className='thermometerContainer thermometerMainContainer'>
-                            <Segment basic className='thermometerBlock' style={{height: '20%'}}>
-                                <div className='thermometerPointer' style={{backgroundColor: '#97DEFF'}}/>
-                            </Segment>
-
-                            <Segment basic className='thermometerBlock' style={{height: '30%'}}>
-                            </Segment>
-
-                            <Segment basic className='thermometerBlock' style={{height: '50%'}}>
-                            </Segment>
+                            {blocks}
                         </div>
 
-                        <Responsive minWidth={Responsive.onlyComputer.minWidth} style={{
-                            zIndex:-300
-                        }}>
+                        <Responsive minWidth={Responsive.onlyComputer.minWidth}>
                             <div className='thermometerContainer thermometerBottomContainer'/>
-
                         </Responsive>
                         <Responsive maxWidth={Responsive.onlyTablet.maxWidth}>
                             <div className='thermometerContainer thermometerMobileBottomContainer'/>
-
                         </Responsive>
 
                     </Grid.Column>
@@ -75,7 +142,7 @@ class Thermometer extends Component {
                     <Grid.Column verticalAlign='middle' width={rightColSize}>
 
                         <Responsive minWidth={Responsive.onlyComputer.minWidth}>
-                            <Segment verticalAlign='top' basic>
+                            <Segment basic>
                                 <h1 style={{
                                     fontSize: '3.0em',
                                     marginTop:0,
@@ -90,27 +157,7 @@ class Thermometer extends Component {
                             </Segment>
                         </Responsive>
 
-                            <FundraisingEvent {...{
-                                amount: '$7,400',
-                                title: 'Community Fundriaser',
-                                imageSrc: fundraiseYogaImg,
-                                color: '#97DEFF',
-                                content: <div>
-                                    <p>
-                                        Community Fundraiser for Ava’s Journey was a great success!
-                                        Such wonderful people from all across Bayside came together to support her and
-                                        it was just wonderful!
-                                    </p>
-                                    <p>
-                                        Thank you to all, and @kingstonartsau for holding the event! 🤗 The wonder girl
-                                        herself made an appearance for a couple of hours and had an amazing time!
-                                    </p>
-                                    <p>
-                                        Here she is enjoying a spot of #pilates with Chris from @weloveyoursoul who
-                                        kindly donated his time and skills to teach group Pilates classes at the event!
-                                    </p>
-                                </div>
-                            }}/>
+                            <FundraisingEvent {...fundraisingBlock}/>
                     </Grid.Column>
                 </Grid>
             </Segment>

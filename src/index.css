@@ -64,6 +64,7 @@ h3.ui.header{
     margin-top: 0;
     /*margin-bottom: 100px;*/
     padding: 3em 3em;
+    background-color:#f4f4f4;
 }
 .thermometerGrid{
     margin-top: 150px;
@@ -89,11 +90,9 @@ h3.ui.header{
 }
 .thermometerTopContainer{
     height:35%;
-    z-index:-20;
 }
 .thermometerMainContainer{
     height:65%;
-    z-index:-50;
     /* HACK TO FIX SMALL GAP ON MOBILE CHROME*/
     margin-top:-1px
 }
@@ -107,9 +106,7 @@ h3.ui.header{
     border-radius: 75px;
     background-color: #E99F86;
     border:10px solid #ddd;
-    /*border-top: 0;*/
     margin-top: -37px;
-    z-index: -100;
 }
 
 .thermometerMobileBottomContainer{

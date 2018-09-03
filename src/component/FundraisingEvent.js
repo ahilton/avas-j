@@ -9,13 +9,14 @@ class FundraisingEvent extends Component {
         // const { fixed } = this.state
 
         return (
-            <Segment className='fundraisingEvent' clearing padding basic textAlign='left' style={{
+            <div className='fundraisingEvent' style={{
                 backgroundColor: 'white',
                 borderWidth: 15,
                 borderColor: color,
                 borderStyle: 'solid',
                 borderRadius: 20
             }}>
+            <Segment clearing basic textAlign='left' >
                 <Responsive minWidth={Responsive.onlyComputer.minWidth}>
                     <Label as='a' color='orange' ribbon='right'>
                         <Statistic inverted size='tiny'>
@@ -27,14 +28,14 @@ class FundraisingEvent extends Component {
 
                 <Responsive maxWidth={Responsive.onlyTablet.maxWidth}>
 
-                    <Segment stretched basic style={{
+                    <Segment basic style={{
                         marginTop: 0
                     }}>
 
                         <h1 style={{marginBottom: 30}}>{title}</h1>
 
-                        <Statistic horizontal text size='tiny' style={{
-                            backgroundColor: 'orange',
+                        <Statistic horizontal inverted text size='tiny' style={{
+                            backgroundColor: '#f2711c',
                             padding: 10,
                             marginTop: -10,
                             borderRadius: 5
@@ -52,7 +53,7 @@ class FundraisingEvent extends Component {
 
                 <Responsive minWidth={Responsive.onlyComputer.minWidth}>
 
-                    <Segment stretched basic style={{
+                    <Segment basic style={{
                         marginTop: -50
                     }}>
                         <h1 style={{marginBottom: 30}}>{title}</h1>
@@ -66,6 +67,7 @@ class FundraisingEvent extends Component {
                 </Responsive>
 
             </Segment>
+            </div>
         )
     }
 }
