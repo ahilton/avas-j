@@ -115,7 +115,7 @@ class Thermometer extends Component {
             color:'#888',
             fontWeight: 300
         }}>
-            Fundraising Tracker
+            Fundraising Updates
         </h1>
             <Rail internal attached position='left' style={{textAlign:'left'}}>
                 <Icon onClick={this.previousFundraisingBlock} link name='chevron left' size='huge' style={{color:'#ccc', marginTop: 40, marginLeft: 30}}/>

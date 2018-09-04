@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import {Button, Container, Grid, Header,} from 'semantic-ui-react'
+import {Link} from "react-router-dom";
 
 const AvaIntroButtons = ({mobile}) => (
 
@@ -10,7 +11,7 @@ const AvaIntroButtons = ({mobile}) => (
             <Button as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate' size='huge'>Donate Now</Button>
         </Grid.Column>
         <Grid.Column textAlign='center' width={7}>
-            <Button inverted size='huge'>Read More...</Button>
+            <Link to="/faq"><Button inverted size='huge'>Read More...</Button></Link>
         </Grid.Column>
     </Grid>
 )

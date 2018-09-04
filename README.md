@@ -9,6 +9,7 @@ https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/
 https://react.semantic-ui.com/usage
 https://semantic-ui.com/usage/theming.html
 http://nephewapps.com/2018/02/25/theming-semantic-ui-with-create-react-app/
+https://github.com/rafrex/react-router-hash-link
 
 ## Table of Contents
 

@@ -1,17 +1,11 @@
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
-import {
-    Button,
-    Container, Image,
-    Menu,
-    Responsive,
-    Segment,
-    Visibility,
-} from 'semantic-ui-react'
+import React, {Component} from 'react'
+import {Button, Container, Menu, Responsive, Segment, Visibility,} from 'semantic-ui-react'
 import AvaIntro from "../component/AvaIntro";
+import {withRouter} from "react-router-dom";
+import MenuLink from "../component/MenuLink";
 
 var logo = require('../img/logo-t.png')
-
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -20,12 +14,18 @@ var logo = require('../img/logo-t.png')
 class DesktopContainer extends Component {
     state = {}
 
-    hideFixedMenu = () => this.setState({ fixed: false })
-    showFixedMenu = () => this.setState({ fixed: true })
+    hideFixedMenu = () => this.setState({fixed: false})
+    showFixedMenu = () => this.setState({fixed: true})
 
     render() {
-        const { children } = this.props
-        const { fixed } = this.state
+
+        const {match} = this.props
+
+        const {children} = this.props
+        const {fixed} = this.state
+
+        const isHome = match.path === "/"
+        const showFixed = fixed || !isHome
 
         return (
             <Responsive minWidth={Responsive.onlyTablet.minWidth}>
@@ -34,69 +34,67 @@ class DesktopContainer extends Component {
                     onBottomPassed={this.showFixedMenu}
                     onBottomPassedReverse={this.hideFixedMenu}
                 >
-                    <Segment
-                        inverted
-                        className='homeHeader'
-                        // style={{ minHeight: 500, padding: '1em 0em' }}
-                        vertical
-                    >
-                        {!fixed &&
+                    <Segment inverted className='homeHeader' vertical>
+                        {!showFixed &&
                         <Container
                             style={{}}
                         >
                             <div style={{
-                                position:'absolute',
-                                width:'inherit'
+                                position: 'absolute',
+                                width: 'inherit'
                             }}>
-                            <img src={logo}
-                                 style={{
-                                     position: 'absolute',
-                                     width: '24em',
-                                     right: '-3em',
-                                     top: '-5.5em'
-                                 }}
-                            />
+                                <img src={logo}
+                                     style={{
+                                         position: 'absolute',
+                                         width: '24em',
+                                         right: '-3em',
+                                         top: '-5.5em'
+                                     }}
+                                />
                             </div>
                         </Container>
                         }
                         <Menu
-                            fixed={fixed ? 'top' : null}
-                            inverted={!fixed}
-                            pointing={!fixed}
-                            secondary={!fixed}
+                            fixed={showFixed ? 'top' : null}
+                            inverted={!showFixed}
+                            pointing={!showFixed}
+                            secondary={!showFixed}
                             size='large'
-                            style={{marginTop:0}}
+                            style={{marginTop: 0}}
                             borderless
                         >
                             <Container>
-
-                                <Menu.Item as='a' active>
-                                    Home
-                                </Menu.Item>
-                                <Menu.Item as='a'>Gala</Menu.Item>
-                                <Menu.Item as='a'>Events</Menu.Item>
-                                <Menu.Item as='a'>Press</Menu.Item>
-                                {fixed && <Menu.Item position='right'>
+                                <MenuLink activeOnlyWhenExact={true} to="/" label="Home"/>
+                                <MenuLink to="/gala" label="Gala"/>
+                                <MenuLink to="/events" label="Events"/>
+                                <MenuLink to="/press" label="Press"/>
+                                <MenuLink to="/faq" label="FAQ"/>
+                                {showFixed && <Menu.Item position='right'>
 
                                 </Menu.Item>}
-                                {fixed && <Menu.Item position='right' >
-                                    <Button as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate' style={{marginRight:'10em'}}>
-                                        Donate
-                                    </Button>
-                                    <img src={logo}
-                                         style={{
-                                             position: 'absolute',
-                                             width: '11em',
-                                             bottom:'-1em',
-                                             left: '10em'
-                                         }}
-                                    />
+                                {/*{showFixed && <Menu.Item position='right'>*/}
+                                    {/*<img src={logoBalloon}*/}
+                                         {/*style={{*/}
+                                             {/*position: 'absolute',*/}
+                                             {/*width: '8em',*/}
+                                             {/*bottom: '-0.9em',*/}
+                                             {/*left: '18em'*/}
+                                         {/*}}*/}
+                                    {/*/>*/}
+                                    {/*<Button as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate'>*/}
+                                        {/*Donate*/}
+                                    {/*</Button>*/}
+                                {/*</Menu.Item>}*/}
+                                {showFixed && <Menu.Item position='right' as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate' style={{
+                                    backgroundColor:'#F3E598',
+                                    color: 'black'
+                                }}>
+                                    Donate
                                 </Menu.Item>}
-
 
                             </Container>
                         </Menu>
-                        <AvaIntro />
+                        {isHome && <AvaIntro/>}
                     </Segment>
                 </Visibility>
 
@@ -110,4 +108,6 @@ DesktopContainer.propTypes = {
     children: PropTypes.node,
 }
 
-export default DesktopContainer
+const ShowTheLocationWithRouter = withRouter(DesktopContainer)
+
+export default ShowTheLocationWithRouter
