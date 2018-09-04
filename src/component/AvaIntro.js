@@ -14,7 +14,7 @@ import AvaIntroButtons from "./AvaIntroButtons";
 var ava = require('../img/ava.jpg')
 
 const AvaIntro = ({ mobile }) => (
-    <Segment className='ava-intro' style={{ padding: '4em 0em' }} vertical>
+    <Segment className='ava-intro' vertical>
         <Grid container stackable verticalAlign='top' textAlign='justified'>
 
             {!mobile && <Grid.Row>

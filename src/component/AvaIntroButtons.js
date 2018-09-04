@@ -7,7 +7,7 @@ const AvaIntroButtons = ({mobile}) => (
 
     <Grid centered stackable={mobile} style={{marginTop:'2.5em'}} columns={2}>
         <Grid.Column textAlign='center' width={7}>
-            <Button size='huge'>Donate Now</Button>
+            <Button as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate' size='huge'>Donate Now</Button>
         </Grid.Column>
         <Grid.Column textAlign='center' width={7}>
             <Button inverted size='huge'>Read More...</Button>

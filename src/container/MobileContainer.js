@@ -39,7 +39,7 @@ class MobileContainer extends Component {
                         <Menu.Item as='a'>Gala</Menu.Item>
                         <Menu.Item as='a'>Events</Menu.Item>
                         <Menu.Item as='a'>Press</Menu.Item>
-                        <Menu.Item as='a'>Donate</Menu.Item>
+                        <Menu.Item as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate'>Donate</Menu.Item>
                     </Sidebar>
 
                     <Sidebar.Pusher

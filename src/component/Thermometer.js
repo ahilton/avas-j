@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Grid, Image, Label, Responsive, Segment, Statistic,} from 'semantic-ui-react'
+import {Button, Grid, Icon, Image, Label, Rail, Responsive, Segment, Statistic,} from 'semantic-ui-react'
 import FundraisingEvent from "./FundraisingEvent";
 
 var fundraiseYogaImg = require('../img/fundraising-community-yoga.jpg')
@@ -35,22 +35,12 @@ class Thermometer extends Component {
             height:'30%',
             amount: '$64,400',
             title: 'Donations',
-            imageSrc: fundraiseYogaImg,
+            // imageSrc: fundraiseYogaImg,
             color: '#8DD1CA',
             content: <div>
-                <p>
-                    Community Fundraiser for Ava’s Journey was a great success!
-                    Such wonderful people from all across Bayside came together to support her and
-                    it was just wonderful!
-                </p>
-                <p>
-                    Thank you to all, and @kingstonartsau for holding the event! 🤗 The wonder girl
-                    herself made an appearance for a couple of hours and had an amazing time!
-                </p>
-                <p>
-                    Here she is enjoying a spot of #pilates with Chris from @weloveyoursoul who
-                    kindly donated his time and skills to teach group Pilates classes at the event!
-                </p>
+
+                <embed height="210px" width="100%" src="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=jupcnf-avas-journey&image=0&coinfo=1&preview=1" type="text/html">
+                </embed>
             </div>
         },{
             height:'50%',
@@ -78,6 +68,21 @@ class Thermometer extends Component {
 
     setActiveFundraisingBlock = (index) => this.setState({ fundraisingBlockIndex: index })
 
+    nextFundraisingBlock = () => {
+        let {fundraisingBlockIndex} = this.state
+        let newFundraisingBlockIndex = (fundraisingBlockIndex+1 >= this.fundraisingBlocks.length)?
+            0:fundraisingBlockIndex+1
+        this.setState({ fundraisingBlockIndex: newFundraisingBlockIndex })
+    }
+
+    previousFundraisingBlock = () => {
+        let {fundraisingBlockIndex} = this.state
+        let newFundraisingBlockIndex = (fundraisingBlockIndex === 0)?
+            this.fundraisingBlocks.length-1:fundraisingBlockIndex-1
+        this.setState({ fundraisingBlockIndex: newFundraisingBlockIndex })
+    }
+
+
     render() {
         // const {children} = this.props
         // const {fixed} = this.state
@@ -96,9 +101,40 @@ class Thermometer extends Component {
         var leftColSize = 5
         var rightColSize = 11
 
+        var detail = <div>
+            <h1 style={{
+                fontSize: '3.0em',
+                marginTop:0,
+                marginBottom:5,
+            }}>
+                Ava's Journey
+            </h1><h1 className='normal' style={{
+            fontSize: '2.0em',
+            marginTop:0,
+            marginBottom:40,
+            color:'#888',
+            fontWeight: 300
+        }}>
+            Fundraising Tracker
+        </h1>
+            <Rail internal attached position='left' style={{textAlign:'left'}}>
+                <Icon onClick={this.previousFundraisingBlock} link name='chevron left' size='huge' style={{color:'#ccc', marginTop: 40, marginLeft: 30}}/>
+            </Rail>
+            <Rail internal attached position='right' style={{textAlign:'right'}}>
+                <Icon onClick={this.nextFundraisingBlock} link name='chevron right' size='huge' style={{color:'#ccc', marginTop: 40, marginRight: 30}}/>
+            </Rail>
+
+            <FundraisingEvent {...fundraisingBlock}/>
+
+        </div>
+
+
+        const thermBreakpointWidth = 700
+
         return (
 
             <Segment clearing raised className='thermometerSegment'>
+                <Responsive minWidth={thermBreakpointWidth}>
                 <Grid stretched centered container className='thermometerGrid'>
                     <Grid.Column textAlign='center' width={leftColSize}>
                         <div className='thermometerContainer thermometerTopContainer'>
@@ -139,27 +175,20 @@ class Thermometer extends Component {
 
                     </Grid.Column>
 
-                    <Grid.Column verticalAlign='middle' width={rightColSize}>
+                    <Grid.Column verticalAlign='top' width={rightColSize} style={{height:700, minHeight:700}}>
 
-                        <Responsive minWidth={Responsive.onlyComputer.minWidth}>
-                            <Segment basic>
-                                <h1 style={{
-                                    fontSize: '3.0em',
-                                    marginTop:0,
-                                    marginBottom:20,
-                                    color:'#888',
-                                    // fontFamily:  'Poppins, Open Sans, Helvetica Neue, Arial, Helvetica, sans-serif',
-                                    fontFamily: 'Lato, Helvetica Neue,Arial,Helvetica,sans-serif',
-                                    fontWeight: 100
-                                }}>
-                                    Fundraising Tracker
-                                </h1>
-                            </Segment>
-                        </Responsive>
-
-                            <FundraisingEvent {...fundraisingBlock}/>
+                        {/*<Responsive minWidth={Responsive.onlyComputer.minWidth}>*/}
+                        <Segment basic compact>
+                        {detail}
+                        </Segment>
                     </Grid.Column>
                 </Grid>
+                </Responsive>
+                <Responsive maxWidth={thermBreakpointWidth}>
+                    <Segment textAlign='center' basic>
+                        {detail}
+                    </Segment>
+                </Responsive>
             </Segment>
         )
     }

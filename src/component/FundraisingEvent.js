@@ -9,14 +9,13 @@ class FundraisingEvent extends Component {
         // const { fixed } = this.state
 
         return (
-            <div className='fundraisingEvent' style={{
+            <Segment clearing basic textAlign='left' style={{
                 backgroundColor: 'white',
                 borderWidth: 15,
                 borderColor: color,
                 borderStyle: 'solid',
                 borderRadius: 20
             }}>
-            <Segment clearing basic textAlign='left' >
                 <Responsive minWidth={Responsive.onlyComputer.minWidth}>
                     <Label as='a' color='orange' ribbon='right'>
                         <Statistic inverted size='tiny'>
@@ -67,7 +66,6 @@ class FundraisingEvent extends Component {
                 </Responsive>
 
             </Segment>
-            </div>
         )
     }
 }

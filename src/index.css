@@ -35,6 +35,18 @@ h3.ui.header{
     font-family:  'Gloria Hallelujah', 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serifq;
 }
 
+.ui h1.normal, .ui  h2.normal, .ui h3.normal{
+    font-family:  'Lato', 'Helvetica Neue','Arial','Helvetica','sans-serif'
+}
+.ui h1.thin, .ui  h2.thin, .ui h3.thin{
+    font-weight: 200;
+}
+
+.gala.ui.segment {
+    color:white;
+    font-size: 1.5em;
+}
+
 .homeHeader h3.ui.header {
     font-size: 2.0em;
     color: #222222;
@@ -49,7 +61,8 @@ h3.ui.header{
 }
 
 .ava-intro.ui.segment {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    padding: 4em 0;
 }
 
 .homeHeader .ui.button {
@@ -63,13 +76,13 @@ h3.ui.header{
 .ui.segment.thermometerSegment{
     margin-top: 0;
     /*margin-bottom: 100px;*/
-    padding: 3em 3em;
+    padding: 4em 0em;
     background-color:#f4f4f4;
 }
 .thermometerGrid{
     margin-top: 150px;
-    height: 700px;
-    min-height: 700px;
+    /*height: 700px;*/
+    /*min-height: 700px;*/
 }
 .thermometerColumn{
     /*//background-color: red;*/
@@ -86,7 +99,6 @@ h3.ui.header{
     border:10px solid #ddd;
     border-bottom: 0;
     border-top: 0;
-    /*border-rRadius:10*/
 }
 .thermometerTopContainer{
     height:35%;
@@ -147,3 +159,25 @@ h3.ui.header{
     position: absolute;
     left: 50px
 }
+
+/*.insta-bquote{*/
+    /*background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);*/
+/*}*/
+/*.insta-div1{*/
+    /*background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;*/
+/*}*/
+/*.insta-div2{*/
+    /*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;*/
+/*}*/
+/*.insta-link1{*/
+    /*color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;*/
+/*}*/
+/*.insta-p2{*/
+    /*color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;*/
+/*}*/
+/*.insta-link2{*/
+    /*color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;*/
+/*}*/
+/*.insta-time{*/
+    /*font-family:Arial,sans-serif; font-size:14px; line-height:17px;*/
+/*}*/

@@ -80,7 +80,7 @@ class DesktopContainer extends Component {
 
                                 </Menu.Item>}
                                 {fixed && <Menu.Item position='right' >
-                                    <Button as='a' inverted={!fixed} style={{marginRight:'10em'}}>
+                                    <Button as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate' style={{marginRight:'10em'}}>
                                         Donate
                                     </Button>
                                     <img src={logo}
