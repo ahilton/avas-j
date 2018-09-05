@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 import React, {Component} from 'react'
-import {Button, Container, Menu, Responsive, Segment, Visibility,} from 'semantic-ui-react'
+import {Container, Menu, Responsive, Segment, Visibility} from 'semantic-ui-react'
 import AvaIntro from "../component/AvaIntro";
 import {withRouter} from "react-router-dom";
-import MenuLink from "../component/MenuLink";
+import Navigation from "../component/Navigation";
 
 var logo = require('../img/logo-t.png')
 
@@ -63,36 +63,17 @@ class DesktopContainer extends Component {
                             style={{marginTop: 0}}
                             borderless
                         >
-                            <Container>
-                                <MenuLink activeOnlyWhenExact={true} to="/" label="Home"/>
-                                <MenuLink to="/gala" label="Gala"/>
-                                <MenuLink to="/events" label="Events"/>
-                                <MenuLink to="/press" label="Press"/>
-                                <MenuLink to="/faq" label="FAQ"/>
+                            <Navigation>
                                 {showFixed && <Menu.Item position='right'>
-
                                 </Menu.Item>}
-                                {/*{showFixed && <Menu.Item position='right'>*/}
-                                    {/*<img src={logoBalloon}*/}
-                                         {/*style={{*/}
-                                             {/*position: 'absolute',*/}
-                                             {/*width: '8em',*/}
-                                             {/*bottom: '-0.9em',*/}
-                                             {/*left: '18em'*/}
-                                         {/*}}*/}
-                                    {/*/>*/}
-                                    {/*<Button as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate'>*/}
-                                        {/*Donate*/}
-                                    {/*</Button>*/}
-                                {/*</Menu.Item>}*/}
+
                                 {showFixed && <Menu.Item position='right' as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate' style={{
                                     backgroundColor:'#F3E598',
                                     color: 'black'
                                 }}>
                                     Donate
                                 </Menu.Item>}
-
-                            </Container>
+                            </Navigation>
                         </Menu>
                         {isHome && <AvaIntro/>}
                     </Segment>

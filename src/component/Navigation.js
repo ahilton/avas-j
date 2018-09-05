@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Menu} from 'semantic-ui-react'
+import {Container, Menu} from 'semantic-ui-react'
 import {Link, Route} from "react-router-dom";
 
 const MenuLink = ({label, to, activeOnlyWhenExact}) => (
@@ -18,4 +18,17 @@ const MenuLink = ({label, to, activeOnlyWhenExact}) => (
     />
 )
 
-export default MenuLink
+const Navigation = ({children}) => (
+
+    <Container>
+        <MenuLink activeOnlyWhenExact={true} to="/" label="Home"/>
+        <MenuLink to="/gala" label="Gala"/>
+        <MenuLink to="/events" label="Events"/>
+        <MenuLink to="/press" label="Press"/>
+        <MenuLink to="/faq" label="FAQ"/>
+        {children}
+    </Container>
+)
+
+
+export default Navigation

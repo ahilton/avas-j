@@ -10,7 +10,7 @@ import {
 } from 'semantic-ui-react'
 import AvaIntro from "../component/AvaIntro";
 import {withRouter} from "react-router-dom";
-import MenuLink from "../component/MenuLink";
+import Navigation from "../component/Navigation";
 
 var logo = require('../img/logo-t.png')
 
@@ -46,12 +46,9 @@ class MobileContainer extends Component {
                             fontSize:'1.33em'
                         }}
                         visible={sidebarOpened}>
-                        <MenuLink activeOnlyWhenExact={true} to="/" label="Home"/>
-                        <MenuLink to="/gala" label="Gala"/>
-                        <MenuLink to="/events" label="Events"/>
-                        <MenuLink to="/press" label="Press"/>
-                        <MenuLink to="/faq" label="FAQ"/>
-                        <Menu.Item as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate'>Donate</Menu.Item>
+                        <Navigation>
+                            <Menu.Item as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate'>Donate</Menu.Item>
+                        </Navigation>
                     </Sidebar>
 
                     <Sidebar.Pusher
