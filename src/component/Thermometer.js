@@ -118,10 +118,10 @@ class Thermometer extends Component {
             Fundraising Updates
         </h1>
             <Rail internal attached position='left' style={{textAlign:'left'}}>
-                <Icon onClick={this.previousFundraisingBlock} link name='chevron left' size='huge' style={{color:'#ccc', marginTop: 40, marginLeft: 30}}/>
+                <Icon onClick={this.previousFundraisingBlock} link name='chevron left' size='big' style={{color:'#ccc', marginTop: 70, marginLeft: 30}}/>
             </Rail>
             <Rail internal attached position='right' style={{textAlign:'right'}}>
-                <Icon onClick={this.nextFundraisingBlock} link name='chevron right' size='huge' style={{color:'#ccc', marginTop: 40, marginRight: 30}}/>
+                <Icon onClick={this.nextFundraisingBlock} link name='chevron right' size='big' style={{color:'#ccc', marginTop: 70, marginRight: 30}}/>
             </Rail>
 
             <FundraisingEvent {...fundraisingBlock}/>

@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import {
-    Button,
     Container,
     Icon,
     Menu,
@@ -10,6 +9,8 @@ import {
     Sidebar,
 } from 'semantic-ui-react'
 import AvaIntro from "../component/AvaIntro";
+import {withRouter} from "react-router-dom";
+import MenuLink from "../component/MenuLink";
 
 var logo = require('../img/logo-t.png')
 
@@ -26,19 +27,30 @@ class MobileContainer extends Component {
     handleToggle = () => this.setState({ sidebarOpened: !this.state.sidebarOpened })
 
     render() {
-        const { children } = this.props
+        const { children, match } = this.props
         const { sidebarOpened } = this.state
+
+        const isHome = match.path === "/"
 
         return (
             <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+
                 <Sidebar.Pushable>
-                    <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
-                        <Menu.Item as='a' active>
-                            Home
-                        </Menu.Item>
-                        <Menu.Item as='a'>Gala</Menu.Item>
-                        <Menu.Item as='a'>Events</Menu.Item>
-                        <Menu.Item as='a'>Press</Menu.Item>
+                    <Sidebar
+                        as={Menu}
+                        animation='push'
+                        inverted
+                        vertical
+                        width='thin'
+                        style={{
+                            fontSize:'1.33em'
+                        }}
+                        visible={sidebarOpened}>
+                        <MenuLink activeOnlyWhenExact={true} to="/" label="Home"/>
+                        <MenuLink to="/gala" label="Gala"/>
+                        <MenuLink to="/events" label="Events"/>
+                        <MenuLink to="/press" label="Press"/>
+                        <MenuLink to="/faq" label="FAQ"/>
                         <Menu.Item as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate'>Donate</Menu.Item>
                     </Sidebar>
 
@@ -51,11 +63,10 @@ class MobileContainer extends Component {
                             inverted
                             textAlign='center'
                             className='homeHeader'
-                            // style={{ minHeight: 350, padding: '1em 0em' }}
                             vertical
                         >
                             <Container>
-                                <Menu inverted pointing secondary size='large'>
+                                <Menu inverted pointing secondary>
                                     <Menu.Item onClick={this.handleToggle}>
                                         <Icon name='sidebar' />
                                     </Menu.Item>
@@ -71,13 +82,13 @@ class MobileContainer extends Component {
                                     </Menu.Item>
                                 </Menu>
                             </Container>
-                            <AvaIntro mobile/>
-
+                            {isHome && <AvaIntro mobile/>}
                         </Segment>
 
                         {children}
                     </Sidebar.Pusher>
                 </Sidebar.Pushable>
+
             </Responsive>
         )
     }
@@ -87,4 +98,6 @@ MobileContainer.propTypes = {
     children: PropTypes.node,
 }
 
-export default MobileContainer
+const MobileContainerWithRouter = withRouter(MobileContainer)
+
+export default MobileContainerWithRouter

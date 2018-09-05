@@ -108,6 +108,6 @@ DesktopContainer.propTypes = {
     children: PropTypes.node,
 }
 
-const ShowTheLocationWithRouter = withRouter(DesktopContainer)
+const DesktopContainerWithRouter = withRouter(DesktopContainer)
 
-export default ShowTheLocationWithRouter
+export default DesktopContainerWithRouter

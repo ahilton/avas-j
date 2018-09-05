@@ -1,26 +1,35 @@
 import React from 'react'
 
 import {Container, Segment} from 'semantic-ui-react'
+import Instagram from "./Instagram";
 
 const FAQ = () => (
     <div>
-        <Segment textAlign='center' basic padded='very'>
+        <Segment textAlign='center' basic padded='very' style={{
+            marginTop:40
+        }}>
             <h1 style={{
-                fontSize:'16em'
+                fontSize:'12em'
             }}>
                 FAQ
             </h1>
         </Segment>
         <Segment basic padded='very'>
 
-            <Container text>
+            <Container text textAlign='justified'>
 
                 <h2 className='normal'>What is little Ava like?</h2>
+                <div style={{float:'right', marginLeft: 25}}>
+                    <Instagram url={'BfmNeo-DK8K'}/>
+                </div>
                 <p>
                     There’s so much we can say about this wonderful little girl. She’s only been on this earth for 2
                     years and 4 months but she has changed our lives and many others in so many positive ways. She’s
                     just wonderful.
-                </p><p>
+                </p>
+
+
+                <p>
                 Ava was born in sandy hospital on 24th March 2016. She was a big chubby healthy baby.
             </p><p>
                 Ava grew like any normal little girl - she loved attending swimming classes, gymbaroo, dancing and baby
@@ -55,6 +64,7 @@ const FAQ = () => (
                 <h2 className='normal'>
                     How did Ava’s diagnosis come about?
                 </h2>
+
                 <p>
                     A couple of days after Ava’s second birthday we noticed she wasn’t herself. She became very upset,
                     she stopped sleeping well and would wake a lot crying. She stopped eating well, was having fevers
@@ -62,7 +72,11 @@ const FAQ = () => (
                 </p><p>
                 During all of this we took her to the doctors and (through no fault of the GPs) were told it was
                 viruses, then. uTI infection and given antibiotics.
-            </p><p>
+            </p>
+                <div style={{float:'left', marginRight: 25}}>
+                    <Instagram url={'BhbFY42DzFD'}/>
+                </div>
+                <p>
                 11 days after this started we decided this was too much and after seeing Ava not walking that day, just
                 laying on the sofa too lethargic to play we took her to the royal children’s hospital emergency. This is
                 where the journey started
@@ -97,6 +111,9 @@ const FAQ = () => (
                 <h2 className='normal'>
                     What has Ava had to go through so far?
                 </h2>
+                <div style={{float:'right', marginLeft: 25}}>
+                    <Instagram url={'BixvtgTAR0h'}/>
+                </div>
                 <p>
                     <ul>
                         <li>

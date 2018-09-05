@@ -15,9 +15,12 @@ import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import FAQ from "./component/FAQ";
 
 const App = ({children}) => (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
         <div>
             <Route exact path="/" component={HomepageLayout}/>
+            <Route path="/gala" component={GalaLayout}/>
+            <Route path="/events" component={EventsLayout}/>
+            <Route path="/press" component={PressLayout}/>
             <Route path="/faq" component={FAQLayout}/>
             {/*<Route path="/topics" component={Topics} />*/}
         </div>
@@ -41,6 +44,21 @@ const FAQLayout = () => (
         <FAQ/>
     </ResponsiveContainer>
 )
+const PressLayout = () => (
+    <ResponsiveContainer>
+        <h1>Press</h1>
+    </ResponsiveContainer>
+)
+const EventsLayout = () => (
+    <ResponsiveContainer>
+        <h1>Events</h1>
+    </ResponsiveContainer>
+)
+const GalaLayout = () => (
+    <ResponsiveContainer>
+        <h1>Gala</h1>
+    </ResponsiveContainer>
+)
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
@@ -55,7 +73,10 @@ const HomepageLayout = () => (
             <Grid stackable container centered>
                 <Grid.Column width={4} stretched verticalAlign="middle">
 
-                    <a href='https://www.instagram.com/leeleeloves12/'>
+                    <a href='https://www.instagram.com/leeleeloves12/' style={{
+                        color:'black',
+                        fontSize:'2em'
+                    }}>
                         <div style={{marginBottom: 10}}>
                             <Icon name='instagram' size='huge'/>
                         </div>
@@ -65,12 +86,6 @@ const HomepageLayout = () => (
                         <h1 style={{margin: 0, marginBottom: 20}}>
                             Ava's Journey
                         </h1>
-                        <p style={{
-                            fontSize: '1.3em',
-                            color: '#bbb'
-                        }}>
-                            @leeleeloves12
-                        </p>
                     </a>
                 </Grid.Column>
                 <Grid.Column width={6}>
@@ -101,19 +116,21 @@ const HomepageLayout = () => (
                                 items...
                             </p>
                             <p>
-                                <Button as='a' href='mailto:info@avasjourney.com.au' size='huge' style={{}}>
+                                <Button as='a' href='mailto:info@avasjourney.com.au' size='huge' style={{backgroundColor:'#8DD1CA'}}>
                                     <Icon name='mail'/>
                                     Get in touch
                                 </Button>
                             </p>
+                            <br/>
                             <p>
                                 Follow & share Ava's Journey &nbsp;
-                                {/*<a href='https://www.facebook.com/Avasneuroblastomajourney/'>*/}
-                                {/*<Icon  name='facebook' size='big'/>*/}
-                                {/*</a>*/}
-                                {/*<a href='https://www.instagram.com/leeleeloves12/'>*/}
-                                {/*<Icon onClick={window.location('https://www.instagram.com/leeleeloves12/')} link name='instagram' size='big'/>*/}
-                                {/*</a>*/}
+                                <Link to='https://www.facebook.com/Avasneuroblastomajourney/'>
+                                    <Icon name='facebook' size='big' style={{color:'black'}}/>
+                                </Link>
+
+                                <Link to='https://www.instagram.com/leeleeloves12/'>
+                                    <Icon name='instagram' size='big' style={{color:'black'}}/>
+                                </Link>
                             </p>
 
                         </div>
@@ -122,7 +139,7 @@ const HomepageLayout = () => (
                         <Header as='h3' style={{fontSize: '2em', margin: '0 0'}}>
                             "What is neuroblastoma?"
                         </Header>
-                        <Header as='h3' style={{fontSize: '2em', marginBottom: '1em'}}>
+                        <Header as='h3' style={{fontSize: '2em', marginBottom: '2em'}}>
                             "What's next for Ava?"
                         </Header>
                         <p style={{fontSize: '1.33em'}}>
@@ -130,7 +147,7 @@ const HomepageLayout = () => (
                         </p>
                         <p style={{fontSize: '1.33em'}}>
                             <Link to="/faq">
-                                <Button as='a' size='huge'>
+                                <Button as='a' size='huge' style={{backgroundColor:'#8DD1CA'}}>
                                     FAQ
                                 </Button>
                             </Link>
@@ -200,7 +217,10 @@ const HomepageLayout = () => (
         <Segment basic style={{
             padding: '6em 0em',
         }} textAlign='center'>
-            <h1>
+            <h1 style={{
+                fontSize:'2.5em',
+                marginBottom:50
+            }}>
                 Upcoming Events
             </h1>
 
@@ -213,42 +233,42 @@ const HomepageLayout = () => (
             </iframe>
         </Segment>
 
-        <Segment style={{padding: '8em 0em'}} vertical>
-            <Container text>
-                <Header as='h3' style={{fontSize: '2em'}}>
-                    Breaking The Grid, Grabs Your Attention
-                </Header>
-                <p style={{fontSize: '1.33em'}}>
-                    Instead of focusing on content creation and hard work, we have learned how to master the
-                    art of doing nothing by providing massive amounts of whitespace and generic content that
-                    can seem massive, monolithic and worth your attention.
-                </p>
-                <Button as='a' size='large'>
-                    Read More
-                </Button>
+        {/*<Segment style={{padding: '8em 0em'}} vertical>*/}
+            {/*<Container text>*/}
+                {/*<Header as='h3' style={{fontSize: '2em'}}>*/}
+                    {/*Breaking The Grid, Grabs Your Attention*/}
+                {/*</Header>*/}
+                {/*<p style={{fontSize: '1.33em'}}>*/}
+                    {/*Instead of focusing on content creation and hard work, we have learned how to master the*/}
+                    {/*art of doing nothing by providing massive amounts of whitespace and generic content that*/}
+                    {/*can seem massive, monolithic and worth your attention.*/}
+                {/*</p>*/}
+                {/*<Button as='a' size='large'>*/}
+                    {/*Read More*/}
+                {/*</Button>*/}
 
-                <Divider
-                    as='h4'
-                    className='header'
-                    horizontal
-                    style={{margin: '3em 0em', textTransform: 'uppercase'}}
-                >
-                    <a href='#'>Case Studies</a>
-                </Divider>
+                {/*<Divider*/}
+                    {/*as='h4'*/}
+                    {/*className='header'*/}
+                    {/*horizontal*/}
+                    {/*style={{margin: '3em 0em', textTransform: 'uppercase'}}*/}
+                {/*>*/}
+                    {/*<a href='#'>Case Studies</a>*/}
+                {/*</Divider>*/}
 
-                <Header as='h3' style={{fontSize: '2em'}}>
-                    Did We Tell You About Our Bananas?
-                </Header>
-                <p style={{fontSize: '1.33em'}}>
-                    Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-                    it's really true. It took years of gene splicing and combinatory DNA research, but our
-                    bananas can really dance.
-                </p>
-                <Button as='a' size='large'>
-                    I'm Still Quite Interested
-                </Button>
-            </Container>
-        </Segment>
+                {/*<Header as='h3' style={{fontSize: '2em'}}>*/}
+                    {/*Did We Tell You About Our Bananas?*/}
+                {/*</Header>*/}
+                {/*<p style={{fontSize: '1.33em'}}>*/}
+                    {/*Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but*/}
+                    {/*it's really true. It took years of gene splicing and combinatory DNA research, but our*/}
+                    {/*bananas can really dance.*/}
+                {/*</p>*/}
+                {/*<Button as='a' size='large'>*/}
+                    {/*I'm Still Quite Interested*/}
+                {/*</Button>*/}
+            {/*</Container>*/}
+        {/*</Segment>*/}
 
         <Segment inverted vertical style={{padding: '5em 0em'}}>
             <Container>

@@ -106,7 +106,7 @@ h3.ui.header{
 .thermometerMainContainer{
     height:65%;
     /* HACK TO FIX SMALL GAP ON MOBILE CHROME*/
-    margin-top:-1px
+    /*margin-top:-1px*/
 }
 .thermometerBottomContainer{
     max-width: 140px;
