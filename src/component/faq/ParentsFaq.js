@@ -1,16 +1,17 @@
 import React from 'react'
+import {Image} from "semantic-ui-react";
+
+var img = require('../../img/insta-ava7.jpg')
 
 const Faq = () => (
 
     <div>
-        <h2 className='normal'>
-            What are the parents’ backgrounds? How are they managing work so that they can pay the bills with
-            Ava being so unwell?
-        </h2>
+        <Image bordered rounded spaced='right' floated='right' size='medium' src={img}/>
+
         <p>
             We have now been together for nearly 6 years, multiple trips across the world, a few different house
             moves, an emigration to Australia, a beautiful daughter Ava and another on the way - a little boy we
-            have already named Angus. On a side note - on the plan over to Australia when emigrating, james
+            have already named Angus. On a side note - on the plane over to Australia when emigrating, james
             proposed to me on the Emirates flight between Dubai and Australia!
         </p>
         <p>
@@ -27,7 +28,6 @@ const Faq = () => (
             This is also why we emigrated to Australia after accepting the role.
         </p>
         <p>
-
             We moved to Australia back in July 2015 and have never looked back! We absolutely love the lifestyle
             Melbourne and particularly bayside brings us. It’s a wonderful area to bring up children - We all love
             our walks to the beach, Ava loves black rock park, it’s great to have wonderful coffee shops and food on
@@ -40,6 +40,5 @@ const Faq = () => (
         </p>
     </div>
 )
-
 
 export default Faq

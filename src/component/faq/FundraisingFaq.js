@@ -3,9 +3,6 @@ import React from 'react'
 const Faq = () => (
 
     <div>
-        <h2 className='normal'>
-            How is the fundraising going? How much is needed?
-        </h2>
         <p>
             The vaccination and associated costs are estimated at a daunting $350,000. We have been blessed to
             have been supported by family, friends, companies and strangers and so far have raised $XX,000.

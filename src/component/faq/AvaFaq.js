@@ -2,11 +2,11 @@ import React from 'react'
 import {Image} from "semantic-ui-react";
 
 var ava1 = require('../../img/insta-ava2.jpg')
+var ava8 = require('../../img/insta-ava8.jpg')
 
 const Faq = () => (
 
     <div>
-        <h2 className='normal'>What is little Ava like?</h2>
         <Image bordered rounded spaced='right' floated='right' size='medium' src={ava1}/>
         <p>
             There’s so much we can say about this wonderful little girl. She’s only been on this earth for 2
@@ -33,6 +33,7 @@ const Faq = () => (
             is a
             hippo and favourite sea animal is a sting ray.
         </p>
+        <Image bordered rounded spaced='left' floated='left' size='medium' src={ava8}/>
         <p>
             Whenever you see Ava she will also have 2 pink jelly Cat bunnies with her- these are her comforters
             and

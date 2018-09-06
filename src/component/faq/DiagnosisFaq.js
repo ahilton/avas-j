@@ -6,12 +6,6 @@ var ava1 = require('../../img/insta-ava1.jpg')
 const Faq = () => (
 
     <div>
-        <h2 className='normal' style={{
-            marginTop: 100
-        }}>
-            How did Ava’s diagnosis come about?
-        </h2>
-
         <p>
             A couple of days after Ava’s second birthday we noticed she wasn’t herself. She became very
             upset,

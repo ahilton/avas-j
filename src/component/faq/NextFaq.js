@@ -3,10 +3,6 @@ import React from 'react'
 const Faq = () => (
 
     <div>
-
-        <h2 className='normal'>
-            What’s next for Ava? (last updated at XX/XX/XXXX)
-        </h2>
         <p>
             Our little fighter Ava is in her 6th round of chemo now. Ava has a long road ahead - at least 18
             months of treatment which will involve chemotherapy, radiotherapy, surgery, stem cell transplant and
@@ -24,7 +20,6 @@ const Faq = () => (
             A trial with extraordinary results in keeping kids clear for years longer than ever seen before.
         </p>
         <p>
-
             Our aim is get there by XXX.
         </p>
     </div>

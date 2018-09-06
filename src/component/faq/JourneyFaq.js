@@ -6,10 +6,6 @@ var img = require('../../img/insta-ava3.jpg')
 const Faq = () => (
 
     <div>
-        <h2 className='normal'>
-            What has Ava had to go through so far?
-        </h2>
-
         <div style={{float: 'right', marginLeft: 25}}>
             <Image bordered rounded spaced='right' floated='right' size='medium' src={img}/>
         </div>

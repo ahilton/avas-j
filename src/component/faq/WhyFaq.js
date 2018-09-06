@@ -1,18 +1,19 @@
 import React from 'react'
+import {Image} from "semantic-ui-react";
+
+var img = require('../../img/insta-ava4.jpg')
 
 const Faq = () => (
 
     <div>
-
-        <h2 className='normal'>
-            Why does the family have to go to NYC for the vaccination and why does it cost so much?
-        </h2>
         <p>
             When we get Ava into remission of this cancer the battle is far from over. Neuroblastoma is a
             difficult disease to treat and in over 75% of patients, they relapse. A relapse of Neuroblastoma
             currently brings a very low prognosis of survival - current available treatment across the world is
             not successful and most cases result in fatality. A 1 in 2 relapse rate.
         </p>
+        <Image bordered rounded spaced='left' floated='left' size='medium' src={img}/>
+
         <p>
 
             There is hope for Ava and other kids like her however at Memorial Sloan Kettering hospital in New York.

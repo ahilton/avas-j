@@ -159,3 +159,9 @@ h3.ui.header{
     position: absolute;
     left: 50px
 }
+
+.faq-page .list>.item:before,
+.faq-page .ui.bulleted.list>.item:before,
+.faq-page ul.ui.list li:before {
+    color: #dddddd
+}
