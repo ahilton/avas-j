@@ -6,7 +6,7 @@ import DesktopContainer from "./container/DesktopContainer";
 import MobileContainer from "./container/MobileContainer";
 import Thermometer from "./component/Thermometer";
 
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route, withRouter} from "react-router-dom";
 import FAQ from "./component/FAQ";
 import InstagramSegment from "./component/home/InstagramSegment";
 import FAQSegment from "./component/home/FAQSegment";
@@ -16,13 +16,13 @@ import EventsSegment from "./component/home/EventsSegment";
 
 const App = ({children}) => (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <div>
+        <ScrollToTopComponent>
             <Route exact path="/" component={HomepageLayout}/>
             <Route path="/gala" component={GalaLayout}/>
             <Route path="/events" component={EventsLayout}/>
             <Route path="/press" component={PressLayout}/>
             <Route path="/faq" component={FAQLayout}/>
-        </div>
+        </ScrollToTopComponent>
     </BrowserRouter>
 )
 export default App
@@ -70,3 +70,16 @@ const HomepageLayout = () => (
     </ResponsiveContainer>
 )
 
+class ScrollToTop extends Component {
+    componentDidUpdate(prevProps) {
+        if (this.props.location !== prevProps.location) {
+            window.scrollTo(0, 0)
+        }
+    }
+
+    render() {
+        return this.props.children
+    }
+}
+
+const ScrollToTopComponent = withRouter(ScrollToTop)

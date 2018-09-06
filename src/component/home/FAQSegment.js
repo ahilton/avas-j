@@ -29,13 +29,13 @@ const FAQSegment = () => (
                         <br/>
                         <p>
                             Follow & share Ava's Journey &nbsp;
-                            <Link to='https://www.facebook.com/Avasneuroblastomajourney/'>
+                            <a href='https://www.facebook.com/Avasneuroblastomajourney/'>
                                 <Icon name='facebook' size='big' style={{color:'black'}}/>
-                            </Link>
+                            </a>
 
-                            <Link to='https://www.instagram.com/leeleeloves12/'>
+                            <a href='https://www.instagram.com/leeleeloves12/'>
                                 <Icon name='instagram' size='big' style={{color:'black'}}/>
-                            </Link>
+                            </a>
                         </p>
 
                     </div>
