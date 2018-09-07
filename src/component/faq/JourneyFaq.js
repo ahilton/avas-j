@@ -6,9 +6,7 @@ var img = require('../../img/insta-ava3.jpg')
 const Faq = () => (
 
     <div>
-        <div style={{float: 'right', marginLeft: 25}}>
-            <Image bordered rounded spaced='right' floated='right' size='medium' src={img}/>
-        </div>
+        <Image bordered rounded spaced='right' floated='right' size='medium' src={img}/>
         <p>
             <ul>
                 <li>

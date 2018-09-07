@@ -1,8 +1,12 @@
 import React from 'react'
+import {Image} from "semantic-ui-react";
+
+var img = require('../../img/insta-ava3.jpg')
 
 const Faq = () => (
 
     <div>
+        <Image bordered rounded spaced='right' floated='right' size='medium' src={img}/>
         <p>
             Our little fighter Ava is in her 6th round of chemo now. Ava has a long road ahead - at least 18
             months of treatment which will involve chemotherapy, radiotherapy, surgery, stem cell transplant and

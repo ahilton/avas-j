@@ -7,7 +7,7 @@ import MobileContainer from "./container/MobileContainer";
 import Thermometer from "./component/Thermometer";
 
 import {BrowserRouter, Route, withRouter} from "react-router-dom";
-import FAQ from "./component/FAQ";
+import FAQ from "./component/faq/FAQ";
 import InstagramSegment from "./component/home/InstagramSegment";
 import FAQSegment from "./component/home/FAQSegment";
 import Footer from "./component/Footer";

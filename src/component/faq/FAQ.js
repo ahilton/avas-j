@@ -2,14 +2,14 @@ import React from 'react'
 
 import {Container, List, Segment} from 'semantic-ui-react'
 import {HashLink as Link} from 'react-router-hash-link';
-import AvaFaq from "./faq/AvaFaq";
-import DiagnosisFaq from "./faq/DiagnosisFaq";
-import JourneyFaq from "./faq/JourneyFaq";
-import NextFaq from "./faq/NextFaq";
-import WhyFaq from "./faq/WhyFaq";
-import FamilyFaq from "./faq/FamilyFaq";
-import FundraisingFaq from "./faq/FundraisingFaq";
-import ParentsFaq from "./faq/ParentsFaq";
+import AvaFaq from "./AvaFaq";
+import DiagnosisFaq from "./DiagnosisFaq";
+import JourneyFaq from "./JourneyFaq";
+import NextFaq from "./NextFaq";
+import WhyFaq from "./WhyFaq";
+import FamilyFaq from "./FamilyFaq";
+import FundraisingFaq from "./FundraisingFaq";
+import ParentsFaq from "./ParentsFaq";
 
 // const scrollWithOffset = (el, offset) => {
 //     const elementPosition = el.offsetTop - offset;
@@ -87,7 +87,7 @@ const FAQ = () => (
             marginTop: 40
         }}>
             <h1 style={{
-                fontSize: '12em'
+                fontSize: '11em'
             }}>
                 FAQ
             </h1>
@@ -99,7 +99,8 @@ const FAQ = () => (
             <Container text textAlign='justified'>
                 <h2 id={item.link} className='normal' style={{
                     fontSize:'2em',
-                    marginBottom:20
+                    marginBottom:20,
+                    textAlign:'left'
                 }}>
                     {item.question}
                 </h2>
