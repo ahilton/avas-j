@@ -2,6 +2,7 @@ import React from 'react'
 import {Image} from "semantic-ui-react";
 
 var ava1 = require('../../img/insta-ava1.jpg')
+var ava6 = require('../../img/insta-ava6.jpg')
 
 const Faq = () => (
 
@@ -40,6 +41,7 @@ const Faq = () => (
             joints,
             but had shown some masses across Ava’s body. Masses consistent with tumours.
         </p>
+        <Image bordered rounded spaced='right' floated='right' size='medium' src={ava6}/>
         <p>
             A senior consultant oncologist (who remains in charge of Ava’s care today) went on to explain - he
             believes it’s Neuroblastoma. He explained further that Ava’s disease on the MRI shows its present in
