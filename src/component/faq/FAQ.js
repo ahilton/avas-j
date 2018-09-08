@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Container, List, Segment} from 'semantic-ui-react'
+import {Container, Image, List, Responsive, Segment} from 'semantic-ui-react'
 import {HashLink as Link} from 'react-router-hash-link';
 import AvaFaq from "./AvaFaq";
 import DiagnosisFaq from "./DiagnosisFaq";
@@ -11,14 +11,7 @@ import FamilyFaq from "./FamilyFaq";
 import FundraisingFaq from "./FundraisingFaq";
 import ParentsFaq from "./ParentsFaq";
 
-// const scrollWithOffset = (el, offset) => {
-//     const elementPosition = el.offsetTop - offset;
-//     window.scroll({
-//         top: elementPosition,
-//         left: 0,
-//         behavior: "smooth"
-//     })
-// };
+var balloon = require('../../img/logo-t-balloon.png')
 
 const qlist = [
     {
@@ -55,55 +48,65 @@ const qlist = [
         component: <FundraisingFaq/>
     }, {
         link: 'parents',
-        question: <div>What are the parents’ backgrounds? <br/> How are they managing work so that they can pay the bills with Ava being so unwell?</div>,
+        question: <div>What are the parents’ backgrounds? <br/> How are they managing work so that they can pay the
+            bills with Ava being so unwell?</div>,
         component: <ParentsFaq/>
     },
 ]
 
 const FAQ = () => (
     <div className='faq-page'>
-        <Segment secondary textAlign='left' padded='very' style={{
-            // marginTop: 40
-        }}>
-            <Container text textAlign='left'>
-
-                <List link bulleted relaxed >
-                    {qlist.map((item, i) =>
-                        <List.Item key={'faq-list-' + i}>
-                        <Link smooth to={'#' + item.link}
-                            // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                            style={{
-                                // color:'#207EA9'
-                            }}
-                        >
-                            {item.question}
-                        </Link>
-                    </List.Item>)}
-                </List>
-            </Container>
-        </Segment>
-
         <Segment textAlign='center' basic padded='very' style={{
-            marginTop: 40
+            marginTop: 0,
+            marginBottom: 0,
+            backgroundColor: '#41BAAE'
         }}>
             <h1 style={{
-                fontSize: '11em'
+                fontSize: '10em'
             }}>
                 FAQ
             </h1>
         </Segment>
+        <Segment secondary textAlign='left' padded='very' style={{
+            marginTop: 0,
+            marginBottom: 0,
+        }}>
+            <Container text textAlign='left'>
+                <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+                    <Image
+                        style={{
+                            float: 'right',
+                            width: 180,
+                            marginTop: -150
+                        }}
+                        size='small' src={balloon}/>
+                </Responsive>
+                <List link bulleted relaxed>
+                    {qlist.map((item, i) =>
+                        <List.Item key={'faq-list-' + i}>
+                            <Link smooth to={'#' + item.link}>
+                                {item.question}
+                            </Link>
+                        </List.Item>)}
+                </List>
+            </Container>
+        </Segment>
 
-        {qlist.map((item, i) => <Segment basic key={'faq-segment-' + i}  padded='very' style={{
+        {qlist.map((item, i) => <Segment basic key={'faq-segment-' + i} padded='very' style={{
             borderBottom: '1px solid #ddd'
         }}>
-            <Container text textAlign='justified'>
+            <Container text textAlign='left'>
                 <h2 id={item.link} className='normal' style={{
-                    fontSize:'2em',
-                    marginBottom:20,
-                    textAlign:'left'
+                    fontSize: '2em',
+                    marginBottom: 20,
+                    marginLeft: -15,
+                    textAlign: 'left'
                 }}>
                     {item.question}
                 </h2>
+            </Container>
+            <Container text textAlign='justified'>
+
                 {item.component}
             </Container>
         </Segment>)}
