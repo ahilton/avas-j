@@ -11,6 +11,8 @@ https://semantic-ui.com/usage/theming.html
 http://nephewapps.com/2018/02/25/theming-semantic-ui-with-create-react-app/
 https://github.com/rafrex/react-router-hash-link
 https://github.com/facebook/create-react-app/issues/1765
+https://itnext.io/so-you-want-to-host-your-single-age-react-app-on-github-pages-a826ab01e48
+https://github.com/rafrex/spa-github-pages
 
 ## Table of Contents
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Image} from "semantic-ui-react";
 
-var img = require('../../img/insta-ava3.jpg')
+var img = require('../../img/insta-ava5.jpg')
 
 const Faq = () => (
 
