@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -38,10 +38,10 @@
         // When the single page app is loaded further down in this file,
         // the correct url will be waiting in the browser's history for
         // the single page app to route accordingly.
-        (function(l) {
+        (function (l) {
             if (l.search) {
                 var q = {};
-                l.search.slice(1).split('&').forEach(function(v) {
+                l.search.slice(1).split('&').forEach(function (v) {
                     var a = v.split('=');
                     q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
                 });
@@ -59,21 +59,67 @@
 
 
     <title>Ava's Journey</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</head>
+<body>
+<noscript>
+    <link rel="stylesheet" type="text/css" href="backup.css">
+    <div class="ui inverted vertical segment homeHeader">
+        <div class="ui container">
+            <div style="position: absolute; width: inherit;">
+                <img src="logo-t.png" style="position: absolute; width: 24em; right: -3em; top: -5.5em;">
+            </div>
+        </div>
+        <div class="ui large borderless inverted pointing secondary menu" style="margin-top: 0px;">
+            <div class="ui container">
+                <!--<a href="/"><a class="item active">Home</a></a><a href="/gala"><a-->
+                <!--class="item">Gala</a></a><a href="/events"><a class="item">Events</a></a><a href="/press"><a-->
+                <!--class="item">Press</a></a><a href="/faq"><a class="item">FAQ</a></a>-->
+            </div>
+        </div>
+        <div class="ui vertical segment ava-intro">
+            <div class="ui container stackable justified top aligned grid">
+                <div class="row">
+                    <div class="stretched center aligned six wide column">
+                        <img src="ava.jpg"
+                             class="ui medium bordered rounded image">
+                    </div>
+                    <div class="ten wide column">
+                        <div><h3 class="ui header">Ava's Journey</h3>
+                            <p>Just 2 weeks after her 2nd birthday, Ava was diagnosed with Stage 4 High Risk Neuroblastoma -
+                                a rare, very aggressive childhood cancer with a low survival rate and high change of
+                                relapse.</p>
+                            <p>A relapse leaves limited treatment options and is almost always terminal.</p>
+                            <h3 class="ui header">Fundraising</h3>
+                            <p>Ava's best hope is to receive a new treatment only available from Sloan Kettering Hospital in
+                                New York City.</p>
+                            <p>We were stunned and horrified to learn that the treatment and associated costs are estimated
+                                at<b>$300,000</b>, but we are determined to raise the money for our baby girl.</p></div>
+                        <!--<div class="ui centered two column grid" style="margin-top: 2.5em;">-->
+                        <!--<div class="center aligned seven wide column">-->
+                            <a
+                        href="https://www.gofundme.com/jupcnf-avas-journey/donate" class="ui huge button"
+                        role="button">Donate Now</a>
+                    </div>
+                        <!--<div class="center aligned seven wide column"><a href="/faq">-->
+                        <!--<button class="ui huge inverted button" role="button">Read More...</button>-->
+                        <!--</a></div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+</body>
 </html>
