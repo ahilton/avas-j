@@ -4,13 +4,11 @@ import {Button, Grid, Icon, Segment,} from 'semantic-ui-react'
 
 import plazaBackground from '../../img/plazaBg.png'
 
-const GalaSegment = () => (
+const GalaSegment = ({children}) => (
 
     <Segment className='gala' basic style={{
         backgroundColor: 'black',
-        padding: '0em',
-        minHeight: 400,
-        height: 400,
+        padding: '4em 0 4em 0',
         backgroundImage: `url(${plazaBackground})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center center'
@@ -23,21 +21,31 @@ const GalaSegment = () => (
                         fontSize: '3em',
                         marginBottom: 0
                     }}>
-                        Ava's Gala
+                        Ava's Gala Dinner
                     </h1>
+                    <h3 className='normal' style={{
+                        fontWeight: 300,
+                        fontSize: '1.2em',
+                        marginTop: 0,
+                        // marginBottom: 40
+                    }}>
+                        17.11.18
+                    </h3>
                     <h3 className='normal' style={{
                         fontWeight: 300,
                         fontSize: '1.2em',
                         marginTop: 0,
                         marginBottom: 40
                     }}>
-                        11.11.18
-                        <span style={{color: '#cccccc'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                        Regent Theatre
+                        <span style={{color: '#cccccc'}}>,&nbsp;&nbsp;</span>
                         Plaza Ballroom
+                        <span style={{color: '#cccccc'}}>,&nbsp;&nbsp;</span>
+                        Melbourne
                     </h3>
-
+                    {children}
                     <p style={{fontSize: '1.33em'}}>
-                        <Button inverted as='a' size='huge' style={{
+                        <Button  as='a' href='https://www.trybooking.com/422407' size='huge' style={{
                             // {marginRight:'10em'}
                         }}>
                             <Icon name='ticket'/>

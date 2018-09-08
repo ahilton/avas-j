@@ -13,6 +13,7 @@ import FAQSegment from "./component/home/FAQSegment";
 import Footer from "./component/Footer";
 import GalaSegment from "./component/home/GalaSegment";
 import EventsSegment from "./component/home/EventsSegment";
+import Gala from "./component/gala/Gala";
 
 const App = ({children}) => (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -56,7 +57,7 @@ const EventsLayout = () => (
 )
 const GalaLayout = () => (
     <ResponsiveContainer>
-        <h1>Gala</h1>
+        <Gala/>
     </ResponsiveContainer>
 )
 
