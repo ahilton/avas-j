@@ -5,14 +5,15 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## Useful links
 
-https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#github-pages
-https://react.semantic-ui.com/usage
-https://semantic-ui.com/usage/theming.html
-http://nephewapps.com/2018/02/25/theming-semantic-ui-with-create-react-app/
-https://github.com/rafrex/react-router-hash-link
-https://github.com/facebook/create-react-app/issues/1765
-https://itnext.io/so-you-want-to-host-your-single-age-react-app-on-github-pages-a826ab01e48
-https://github.com/rafrex/spa-github-pages
+* https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#github-pages
+* https://react.semantic-ui.com/usage
+* https://semantic-ui.com/usage/theming.html
+* http://nephewapps.com/2018/02/25/theming-semantic-ui-with-create-react-app/
+* https://github.com/rafrex/react-router-hash-link
+* https://github.com/facebook/create-react-app/issues/1765
+* https://itnext.io/so-you-want-to-host-your-single-age-react-app-on-github-pages-a826ab01e48
+* https://github.com/rafrex/spa-github-pages
+* https://github.com/sugarshin/react-instagram-embed/issues/21
 
 ## Table of Contents
 
