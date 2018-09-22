@@ -14,6 +14,7 @@ import Footer from "./component/Footer";
 import GalaSegment from "./component/home/GalaSegment";
 import EventsSegment from "./component/home/EventsSegment";
 import Gala from "./component/gala/Gala";
+import Press from "./component/press/Press";
 
 const App = ({children}) => (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -47,7 +48,7 @@ const FAQLayout = () => (
 )
 const PressLayout = () => (
     <ResponsiveContainer>
-        <h1>Press</h1>
+        <Press/>
     </ResponsiveContainer>
 )
 const EventsLayout = () => (
