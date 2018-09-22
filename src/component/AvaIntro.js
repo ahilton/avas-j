@@ -35,7 +35,7 @@ const AvaIntro = ({ mobile }) => (
                 </Responsive>
                 <Responsive maxWidth={600}>
                     <Container textAlign={'center'} style={{marginBottom:'2em'}}>
-                        <Image bordered rounded spaced size='medium' src={ava} />
+                        <Image bordered rounded size='medium' src={ava} style={{display:'inline-block'}}/>
                     </Container>
                     <AvaIntroText/>
                     <AvaIntroButtons mobile/>

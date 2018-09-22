@@ -10,9 +10,8 @@ var pressbayside = require('../../img/press-bayside.png')
 
 const Press = () => (
 
-    <Container>
-        {/*<div style={{marginTop:30}}></div>*/}
-        <Segment style={{marginTop: '4em'}} vertical>
+    <div>
+        <Segment style={{padding: '4em 0 3em 0', backgroundColor:'#f3f4f5'}} >
             <Container text className='pressContainer'>
                 <Header as='h2' style={{fontSize: '4em'}}>
                     Press
@@ -21,17 +20,18 @@ const Press = () => (
                     href='mailto:hello@audreypaige.com'>hello@audreypaige.com</a></p>
                 <p>
                     <Button as='a'
-                            href='/AvaRelease.docx'
-                            size='large'>
+                            href={process.env.PUBLIC_URL+'/AvaRelease.docx'}
+                            size='medium'>
                         Download media kit
                     </Button>
                 </p>
             </Container>
         </Segment>
-        <Segment style={{padding: '4em 0em 8em 0em'}} vertical>
+        <Segment style={{padding: '2em 0em 8em 0em'}} vertical>
             <Container text className='pressContainer'>
 
-                <Image bordered rounded spaced='left' floated='right' size='small' src={press7}/>
+                <Image href='https://au.news.yahoo.com/mums-desperate-battle-keep-seriously-ill-daughter-alive-past-age-five-084027238.html'
+                       bordered rounded spaced='left' floated='right' size='small' src={press7}/>
                 <Header className='normal' as='h3' style={{fontSize: '2em'}}>
                     Mum's desperate battle to keep seriously ill daughter alive past age of five
                 </Header>
@@ -56,7 +56,8 @@ const Press = () => (
 
                 <Divider section/>
 
-                <Image bordered rounded spaced='left' floated='right' size='small' src={pressdm}/>
+                <Image href='https://www.dailymail.co.uk/news/article-6052275/Five-year-old-Ava-Melbourne-diagnosed-Neuroblastoma.html'
+                    bordered rounded spaced='left' floated='right' size='small' src={pressdm}/>
                 <Header className='normal' as='h3' style={{fontSize: '2em'}}>
                     'This is her only chance of surviving': Mother fights to keep her daughter, Ava, alive after the
                     two-year-old is diagnosed with rare and aggressive tumours
@@ -82,7 +83,8 @@ const Press = () => (
 
                 <Divider section/>
 
-                <Image bordered rounded spaced='left' floated='right' size='small' src={pressdm}/>
+                <Image href='https://www.dailymail.co.uk/femail/article-6104403/The-heart-wrenching-moment-time-mum-told-two-year-old-daughter-stage-four-cancer.html'
+                    bordered rounded spaced='left' floated='right' size='small' src={pressdm}/>
                 <Header className='normal' as='h3' style={{fontSize: '2em'}}>
                     'We thought she was just teething': The heart-wrenching moment a first time mother was told her two-year-old daughter had stage four cancer that could take her life before her fifth birthday
                 </Header>
@@ -104,7 +106,8 @@ const Press = () => (
 
                 <Divider section/>
 
-                <Image bordered rounded spaced='right' floated='right' size='small' src={pressmama}/>
+                <Image href='https://www.mamamia.com.au/child-with-neuroblastoma/'
+                       bordered rounded spaced='right' floated='right' size='small' src={pressmama}/>
                 <Header className='normal' as='h3' style={{fontSize: '2em'}}>
                     Ava had just turned two when her Melbourne parents noticed something was very wrong
                 </Header>
@@ -126,7 +129,8 @@ const Press = () => (
 
                 <Divider section/>
 
-                <Image bordered rounded spaced='right' floated='right' size='small' src={pressrc}/>
+                <Image href='https://www.zachary-phillips.com/realitycheck/avas-journey-battling-neuroblastoma'
+                    bordered rounded spaced='right' floated='right' size='small' src={pressrc}/>
                 <Header className='normal' as='h3' style={{fontSize: '2em'}}>
                     Episode 49: Ava's Journey - Battling Neuroblastoma (podcast interview)
                 </Header>
@@ -152,7 +156,8 @@ const Press = () => (
 
                 <Divider section/>
 
-                <Image bordered rounded spaced='right' floated='right' size='small' src={pressbayside}/>
+                <Image href={process.env.PUBLIC_URL+'/IMG-20180821-WA0028.jpg'}
+                       bordered rounded spaced='right' floated='right' size='small' src={pressbayside}/>
                 <Header className='normal' as='h3' style={{fontSize: '2em'}}>
                     Help brave little Ava get well
                 </Header>
@@ -165,14 +170,14 @@ const Press = () => (
                 <p>
                     "We noticed she wasn't herself," mum Leanne said...
                 </p>
-                <Button as='a' href='/IMG-20180821-WA0028.jpg'
+                <Button as='a' href={process.env.PUBLIC_URL+'/IMG-20180821-WA0028.jpg'}
                         size='large'>
                     Read More...
                 </Button>
 
             </Container>
         </Segment>
-    </Container>
+    </div>
 )
 
 

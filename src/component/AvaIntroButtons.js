@@ -8,10 +8,10 @@ const AvaIntroButtons = ({mobile}) => (
 
     <Grid centered stackable={mobile} style={{marginTop:'2.5em'}} columns={2}>
         <Grid.Column textAlign='center' width={7}>
-            <Button as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate' size='huge'>Donate Now</Button>
+            <Button as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate' size='massive'>Donate Now</Button>
         </Grid.Column>
         <Grid.Column textAlign='center' width={7}>
-            <Link to="/faq"><Button inverted size='huge'>Read More...</Button></Link>
+            <Link to="/faq"><Button inverted size='massive'>Read More...</Button></Link>
         </Grid.Column>
     </Grid>
 )

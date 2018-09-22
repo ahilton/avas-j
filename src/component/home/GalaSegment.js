@@ -29,7 +29,7 @@ const GalaSegment = ({children}) => (
                         marginTop: 0,
                         // marginBottom: 40
                     }}>
-                        17.11.18
+                        17<sup>th</sup> November, 2018
                     </h3>
                     <h3 className='normal' style={{
                         fontWeight: 300,
@@ -56,13 +56,15 @@ const GalaSegment = ({children}) => (
                         fontWeight: 200,
                         fontSize: '1.1em'
                     }}>
-                        Guest Speakers
+                        Celebrity Hosts
+                        <span style={{color: '#cccccc'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                        Black Tie
                         <span style={{color: '#cccccc'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                         3 Course Dinner
                         <span style={{color: '#cccccc'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                        Auction
-                        <span style={{color: '#cccccc'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                         Prizes
+                        <span style={{color: '#cccccc'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                        Silent Auction
                     </h3>
                 </Grid.Column>
             </Grid.Row>

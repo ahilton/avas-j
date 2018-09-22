@@ -20,7 +20,7 @@ const App = ({children}) => (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTopComponent>
             <Route exact path="/" component={HomepageLayout}/>
-            <Route path="/gala" component={GalaLayout}/>
+            {/*<Route path="/gala" component={GalaLayout}/>*/}
             <Route path="/events" component={EventsLayout}/>
             <Route path="/press" component={PressLayout}/>
             <Route path="/faq" component={FAQLayout}/>
@@ -64,11 +64,11 @@ const GalaLayout = () => (
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
+        <FAQSegment/>
         <Thermometer/>
         <InstagramSegment/>
-        <FAQSegment/>
-        <GalaSegment/>
-        <EventsSegment/>
+        {/*<GalaSegment/>*/}
+        {/*<EventsSegment/>*/}
     </ResponsiveContainer>
 )
 

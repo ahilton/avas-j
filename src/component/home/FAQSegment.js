@@ -1,24 +1,22 @@
 import React from 'react'
 
-import {Button, Grid, Header, Icon, Segment,} from 'semantic-ui-react'
-import {Link} from "react-router-dom";
+import {Button, Grid, Icon, Segment,} from 'semantic-ui-react'
 
 const FAQSegment = () => (
 
     <Segment basic style={{padding: '0em'}} vertical>
         <Grid celled='internally' columns='equal' stackable>
             <Grid.Row textAlign='center'>
-                <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
-                    <h3 style={{fontSize: '3em', marginBottom: 30}}>
+                <Grid.Column style={{padding: '5em 2em 5em 2em'}}>
+                    <h3 style={{fontSize: '2.5em', marginBottom: 30}}>
                         "How can I help?"
                     </h3>
-                    <div style={{fontSize: '1.33em', padding: '0 3em'}}>
-                        {/*<p>*/}
-                        {/*Thank you for taking an interest in Ava's Journey.*/}
-                        {/*</p>*/}
-                        <p style={{}}>
-                            We welcome messages of support, volunteering, <br/>fundraising ideas, donated auction
-                            items...
+                    <div style={{fontSize: '1.2em', padding: '0 3em'}}>
+                        <p>
+                            Every time we get a new <a href='https://www.gofundme.com/jupcnf-avas-journey/donate'>donation</a> or message, it brings us so much hope and joy, you can never know.
+                        </p>
+                        <p >
+                            Or if you have the capacity to donate auction items for our events, volunteer specialist skills, share her story and events on social media, or just want to say hi, we would love for you to get in touch.
                         </p>
                         <p>
                             <Button as='a' href='mailto:info@avasjourney.com.au' size='huge' style={{backgroundColor:'#8DD1CA'}}>
@@ -26,38 +24,24 @@ const FAQSegment = () => (
                                 Get in touch
                             </Button>
                         </p>
-                        <br/>
-                        <p>
-                            Follow & share Ava's Journey &nbsp;
-                            <a href='https://www.facebook.com/Avasneuroblastomajourney/'>
-                                <Icon name='facebook' size='big' style={{color:'black'}}/>
-                            </a>
-
-                            <a href='https://www.instagram.com/leeleeloves12/'>
-                                <Icon name='instagram' size='big' style={{color:'black'}}/>
-                            </a>
-                        </p>
 
                     </div>
                 </Grid.Column>
                 <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
-                    <Header as='h3' style={{fontSize: '2em', margin: '0 0'}}>
-                        "What is neuroblastoma?"
-                    </Header>
-                    <Header as='h3' style={{fontSize: '2em', marginBottom: '2em'}}>
-                        "What's next for Ava?"
-                    </Header>
-                    <p style={{fontSize: '1.33em'}}>
-                        Read our FAQ page to find out more
-                    </p>
-                    <p style={{fontSize: '1.33em'}}>
-                        <Link to="/faq">
-                            <Button as='a' size='huge' style={{backgroundColor:'#8DD1CA'}}>
-                                FAQ
-                            </Button>
-                        </Link>
-                    </p>
+                    <h3 style={{fontSize: '2.5em', marginBottom: 40}}>
+                        Follow & share<br/>
+                        Ava's Journey
+                    </h3>
+                    <p>
 
+                        <a href='https://www.facebook.com/Avasneuroblastomajourney/'>
+                            <Icon name='facebook' size='huge' style={{color:'black'}}/>
+                        </a>
+
+                        <a href='https://www.instagram.com/leeleeloves12/'>
+                            <Icon name='instagram' size='huge' style={{color:'black'}}/>
+                        </a>
+                    </p>
                 </Grid.Column>
             </Grid.Row>
         </Grid>
