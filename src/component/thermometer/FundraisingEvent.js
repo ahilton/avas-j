@@ -11,7 +11,7 @@ class FundraisingEvent extends Component {
         return (
             <Segment clearing basic textAlign='left' style={{
                 backgroundColor: 'white',
-                borderWidth: 15,
+                borderWidth: 10,
                 borderColor: color,
                 borderStyle: 'solid',
                 borderRadius: 20

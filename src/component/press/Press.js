@@ -4,6 +4,7 @@ import {Button, Container, Divider, Header, Image, Segment} from "semantic-ui-re
 var press7 = require('../../img/press-7.png')
 var pressmama = require('../../img/press-mama.png')
 var pressdm = require('../../img/press-dailym.png')
+var pressdmaus = require('../../img/press-dailym-aus.png')
 var pressrc = require('../../img/press-rc.png')
 var pressbayside = require('../../img/press-bayside.png')
 
@@ -84,7 +85,7 @@ const Press = () => (
                 <Divider section/>
 
                 <Image href='https://www.dailymail.co.uk/femail/article-6104403/The-heart-wrenching-moment-time-mum-told-two-year-old-daughter-stage-four-cancer.html'
-                    bordered rounded spaced='left' floated='right' size='small' src={pressdm}/>
+                    bordered rounded spaced='left' floated='right' size='small' src={pressdmaus}/>
                 <Header className='normal' as='h3' style={{fontSize: '2em'}}>
                     'We thought she was just teething': The heart-wrenching moment a first time mother was told her two-year-old daughter had stage four cancer that could take her life before her fifth birthday
                 </Header>
