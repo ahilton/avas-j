@@ -6,14 +6,12 @@ import DesktopContainer from "./container/DesktopContainer";
 import MobileContainer from "./container/MobileContainer";
 import Thermometer from "./component/Thermometer";
 
-import {BrowserRouter, Route, withRouter} from "react-router-dom";
+import {BrowserRouter, Redirect, Route, withRouter} from "react-router-dom";
 import FAQ from "./component/faq/FAQ";
 import InstagramSegment from "./component/home/InstagramSegment";
 import FAQSegment from "./component/home/FAQSegment";
 import Footer from "./component/Footer";
-import GalaSegment from "./component/home/GalaSegment";
 import EventsSegment from "./component/home/EventsSegment";
-import Gala from "./component/gala/Gala";
 import Press from "./component/press/Press";
 import EventPage from "./component/events/EventPage";
 
@@ -21,7 +19,7 @@ const App = ({children}) => (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTopComponent>
             <Route exact path="/" component={HomepageLayout}/>
-            {/*<Route path="/gala" component={GalaLayout}/>*/}
+            <Route path="/gala" component={GalaLayout}/>
             <Route path="/events" component={EventsLayout}/>
             <Route path="/press" component={PressLayout}/>
             <Route path="/faq" component={FAQLayout}/>
@@ -58,9 +56,10 @@ const EventsLayout = () => (
     </ResponsiveContainer>
 )
 const GalaLayout = () => (
-    <ResponsiveContainer>
-        <Gala/>
-    </ResponsiveContainer>
+    <Redirect to="/events#galaEvent" />
+    // <ResponsiveContainer>
+    //     <Gala/>
+    // </ResponsiveContainer>
 )
 
 const HomepageLayout = () => (
