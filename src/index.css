@@ -10,6 +10,7 @@
 /*}*/
 /*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');*/
 /*@import url('https://fonts.googleapis.com/css?family=Anton|Nanum+Gothic');*/
+/*Biryani|Kalam|Cinzel|*/
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Poppins');
 .homeHeader.ui.inverted.segment {
     background-color: #41BAAE;
@@ -200,4 +201,34 @@ h3.ui.header{
 .pressContainer .ui.section.divider {
     margin-top: 3em;
     margin-bottom: 3em;
+}
+
+.ui.stackable.grid>.wide.column.mobileEvent {
+    padding: 0 0!important
+}
+
+.eventPage
+.artEvent
+a{
+    color:#d77591
+}
+
+.eventPage
+.zooEvent
+a{
+    color:#41BAAE
+}
+
+.eventPage .artEvent h2 a,
+.eventPage .zooEvent h2 a{
+    color:#444
+}
+.eventPage h2 a:hover{
+    color:#000
+}
+.eventMenu a{
+    color:#333
+}
+.eventMenu a:hover{
+    color:#000
 }

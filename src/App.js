@@ -15,6 +15,7 @@ import GalaSegment from "./component/home/GalaSegment";
 import EventsSegment from "./component/home/EventsSegment";
 import Gala from "./component/gala/Gala";
 import Press from "./component/press/Press";
+import EventPage from "./component/events/EventPage";
 
 const App = ({children}) => (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -53,7 +54,7 @@ const PressLayout = () => (
 )
 const EventsLayout = () => (
     <ResponsiveContainer>
-        <h1>Events</h1>
+        <EventPage/>
     </ResponsiveContainer>
 )
 const GalaLayout = () => (
@@ -68,7 +69,7 @@ const HomepageLayout = () => (
         <Thermometer/>
         <InstagramSegment/>
         {/*<GalaSegment/>*/}
-        {/*<EventsSegment/>*/}
+        <EventsSegment/>
     </ResponsiveContainer>
 )
 

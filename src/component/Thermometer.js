@@ -90,8 +90,8 @@ class Thermometer extends Component {
             content: <PlayZoneBubble/>
         },{
             height:'49%',
-            amount: '$70,672',
-            title: <a href='https://www.gofundme.com/jupcnf-avas-journey'>Donations</a>,
+            amount: '$72,608',
+            title: 'Donations',
             imageSrc: fundraiseDonationsImg,
             color: '#e03997',
             content: <DonationsBubble/>

@@ -8,12 +8,14 @@ const GalaSegment = ({children}) => (
 
     <Segment className='gala' basic style={{
         backgroundColor: 'black',
-        padding: '4em 0 4em 0',
+        padding: '2em',
         backgroundImage: `url(${plazaBackground})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center center'
     }} vertical textAlign='center'>
-        <Grid padded verticalAlign='middle' style={{height: '100%'}}>
+        <Grid padded verticalAlign='middle' style={{
+            height: '100%',
+        }}>
             <Grid.Row textAlign='center'>
                 <Grid.Column>
                     <h1 className='normal' style={{

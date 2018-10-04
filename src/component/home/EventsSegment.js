@@ -11,12 +11,12 @@ const EventsSegment = () => (
             fontSize:'2.5em',
             marginBottom:50
         }}>
-            Upcoming Events
+            Ava's Journey Update
         </h1>
 
         <iframe
-            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fweloveyoursoul%2Fposts%2F1947340912225430&width=350&show_text=true&height=528&appId"
-            width="350" height="528"
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAvasneuroblastomajourney%2Fposts%2F330189724383074&width=500"
+            width="500" height="528"
             style={{border: 'none', overflow: 'hidden'}} scrolling="no"
             frameborder="0" allowTransparency="true" allow="encrypted-media">
 

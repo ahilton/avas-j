@@ -62,10 +62,12 @@ class MobileContainer extends Component {
                             className='homeHeader'
                             vertical
                         >
-                            <Container>
+                            <Container stlye={{
+
+                            }}>
                                 <Menu inverted pointing secondary>
                                     <Menu.Item onClick={this.handleToggle}>
-                                        <Icon name='sidebar' />
+                                        <Icon name='sidebar' size='big'/>
                                     </Menu.Item>
                                     <Menu.Item position='right' >
                                         <img src={logo}

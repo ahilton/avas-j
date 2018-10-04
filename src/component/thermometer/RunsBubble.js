@@ -4,7 +4,7 @@ import BubbleText from "./BubbleText";
 const RunsBubble = () => (
     <BubbleText>
         <p>
-            A special thanks to our aspiring athletes - Paula, Dan, Alex, Kathryn & Clive - for sprinting, jogging and
+            A special thanks to our aspiring athletes - Paula, Stef, Dan, Alex, Kathryn & Clive - for sprinting, jogging and
             hobbling around Australia's half-marathons, trail runs & sprint races to help raise money for Ava's Journey.
         </p>
         <p>
