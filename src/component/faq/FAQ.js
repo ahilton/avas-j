@@ -61,11 +61,17 @@ const FAQ = () => (
             marginBottom: 0,
             backgroundColor: '#41BAAE'
         }}>
-            <h1 style={{
-                fontSize: '10em'
+            <h1 className='normal' style={{
+                fontSize: '9em'
             }}>
                 FAQ
             </h1>
+            <div style={{
+                color:'#333',
+                // marginBottom:30
+            }}>
+                Last updated Sept. 2018
+            </div>
         </Segment>
         <Segment secondary textAlign='left' padded='very' style={{
             marginTop: 0,

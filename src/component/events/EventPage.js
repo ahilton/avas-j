@@ -22,10 +22,10 @@ const EventPage = () => (
             }}>
                 Fundraising Events
             </h1>
-            <Menu secondary compact size='huge' className='eventMenu'>
+            <Menu secondary stackable compact size='huge' className='eventMenu'>
                 <Menu.Item link>
                     <Link smooth to={'#artEvent'}>
-                        <Icon name='paint brush'/>&nbsp;
+                        <Icon name='cocktail'/>&nbsp;
                         Art For Ava
                     </Link>
                 </Menu.Item>
@@ -41,7 +41,7 @@ const EventPage = () => (
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Link smooth to={'#galaEvent'}>
-                        <Icon name='cocktail'/>&nbsp;
+                        <Icon name='star'/>&nbsp;
                         Gala
                     </Link>
                 </Menu.Item>
