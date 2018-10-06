@@ -5,7 +5,7 @@ const Faq = () => (
     <div>
         <p>
             The vaccination and associated costs are estimated at a daunting $350,000. We have been blessed to have been
-            supported by family, friends, companies and strangers and so far have raised $80,400. There is still a long
+            supported by family, friends, companies and strangers and so far have raised $98,400. There is still a long
             road ahead and there are a range of <a href='/events'>events</a> and activities coming up.
         </p>
         <p>

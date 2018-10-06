@@ -31,7 +31,7 @@ class FundraisingEvent extends Component {
                         marginTop: 0
                     }}>
 
-                        <h1 style={{marginBottom: 30}}>{title}</h1>
+                        <h1 className='normal' style={{marginBottom: 30}}>{title}</h1>
 
                         <Statistic horizontal inverted text size='tiny' style={{
                             backgroundColor: '#f2711c',
@@ -55,7 +55,7 @@ class FundraisingEvent extends Component {
                     <Segment basic style={{
                         marginTop: -50
                     }}>
-                        <h1 style={{marginBottom: 30}}>{title}</h1>
+                        <h1 className='normal' style={{marginBottom: 30}}>{title}</h1>
                         <Image
                             size='medium'
                             floated='right'

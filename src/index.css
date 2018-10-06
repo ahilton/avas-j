@@ -232,3 +232,9 @@ a{
 .eventMenu a:hover{
     color:#000
 }
+a.webmasterlink{
+    color:#666
+}
+a.webmasterlink:hover{
+    color:#777
+}

@@ -90,7 +90,7 @@ class Thermometer extends Component {
             content: <PlayZoneBubble/>
         }, {
             height: '49%',
-            amount: '$72,608',
+            amount: '$73,700',
             title: 'Donations',
             imageSrc: fundraiseDonationsImg,
             color: '#e03997',

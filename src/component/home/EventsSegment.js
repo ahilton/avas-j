@@ -7,7 +7,7 @@ const EventsSegment = () => (
     <Segment basic style={{
         padding: '6em 0em',
     }} textAlign='center'>
-        <h1 style={{
+        <h1 className='normal' style={{
             fontSize:'2.5em',
             marginBottom:50
         }}>

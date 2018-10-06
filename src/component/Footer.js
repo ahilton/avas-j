@@ -4,7 +4,7 @@ import {Container, Grid, List, Segment,} from 'semantic-ui-react'
 
 const Footer = () => (
 
-    <Segment inverted vertical style={{padding: '5em 0em'}}>
+    <Segment inverted vertical style={{padding: '5em 0em', fontSize:'1.1em'}}>
         <Container>
             <Grid divided inverted centered stackable>
                 <Grid.Row>
@@ -45,7 +45,9 @@ const Footer = () => (
                         {/*</style>*/}
 
                         <div id="mc_embed_signup">
-                            <h2>Subscribe to Ava's mailing list</h2>
+                            <h2 className='normal' style={{
+                                fontWeight: 400
+                            }}>Subscribe to Ava's mailing list</h2>
                             <form
                                 action="https://avasjourney.us19.list-manage.com/subscribe/post?u=446327b352951006ca5e58c25&amp;id=a8f6b3da69"
                                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
@@ -75,6 +77,14 @@ const Footer = () => (
                             </form>
                         </div>
                     </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                    <div style={{
+                        marginTop:10,
+                        color:'#555'
+                    }}>
+                        Website Design by <b><a className='webmasterlink' href='mailto:ahilton@gmail.com'>Zut Studios</a></b> - 2018
+                    </div>
                 </Grid.Row>
             </Grid>
         </Container>
