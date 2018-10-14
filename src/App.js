@@ -14,6 +14,7 @@ import Footer from "./component/Footer";
 import EventsSegment from "./component/home/EventsSegment";
 import Press from "./component/press/Press";
 import EventPage from "./component/events/EventPage";
+import GalaSegment from "./component/home/GalaSegment";
 
 const App = ({children}) => (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -57,17 +58,14 @@ const EventsLayout = () => (
 )
 const GalaLayout = () => (
     <Redirect to="/events#galaEvent" />
-    // <ResponsiveContainer>
-    //     <Gala/>
-    // </ResponsiveContainer>
 )
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
+        <GalaSegment showDetail/>
         <FAQSegment/>
         <Thermometer/>
         <InstagramSegment/>
-        {/*<GalaSegment/>*/}
         <EventsSegment/>
     </ResponsiveContainer>
 )

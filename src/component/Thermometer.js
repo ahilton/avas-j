@@ -9,6 +9,7 @@ import MovieBubble from "./thermometer/MovieBubble";
 import CoffeeBubble from "./thermometer/CoffeeBubble";
 import PlayZoneBubble from "./thermometer/PlayZoneBubble";
 import DonationsBubble from "./thermometer/DonationsBubble";
+import ArtBubble from "./thermometer/ArtBubble";
 
 var fundraiseYogaImg = require('../img/fundraising-community-yoga.jpg')
 var fundraiseJewelleryImg = require('../img/fundraising-bangle.jpg')
@@ -17,12 +18,13 @@ var fundraisePlayzoneImg = require('../img/fundraising-playzone.jpg')
 var fundraiseFFImg = require('../img/fundraising-fitnessfirst.jpg')
 var fundraisePaulaImg = require('../img/fundraising-paula.jpg')
 var fundraiseMovieImg = require('../img/fundraising-movie.png')
+var fundraiseArtImg = require('../img/fundraising-art2.jpg')
 var fundraiseDonationsImg = require('../img/insta-ava7.jpg')
 
 
 class Thermometer extends Component {
 
-    state = {fundraisingBlockIndex: Math.floor(Math.random() * 8)}
+    state = {fundraisingBlockIndex: 0} //Math.floor(Math.random() * 8)}
 
     /*
     @red            : #B03060;
@@ -40,6 +42,13 @@ class Thermometer extends Component {
 
     fundraisingBlocks = [
         {
+            height: '7%',
+            amount: '$8,485',
+            title: 'Art For Ava',
+            imageSrc: fundraiseArtImg,
+            color: '#f2711c',
+            content: <ArtBubble/>
+        }, {
             height: '8%',
             amount: '$9,051',
             title: 'Community Fundraiser',
@@ -89,8 +98,8 @@ class Thermometer extends Component {
             color: '#e054a4',
             content: <PlayZoneBubble/>
         }, {
-            height: '49%',
-            amount: '$73,700',
+            height: '41%',
+            amount: '$76,300',
             title: 'Donations',
             imageSrc: fundraiseDonationsImg,
             color: '#e03997',
@@ -170,7 +179,7 @@ class Thermometer extends Component {
                 color:'#bbb',
                 marginBottom:30
             }}>
-                Last updated Sept. 2018
+                Last updated Oct 14<sup>th</sup> 2018
             </div>
 
             <Rail internal attached position='left' style={{textAlign: 'left'}}>
@@ -209,7 +218,7 @@ class Thermometer extends Component {
                                 <Segment basic className='thermometerBlock' style={{
                                     height: '40%',
                                     // zIndex: 1,
-                                    backgroundColor: '#b5cc18'
+                                    backgroundColor: '#f2711c'
                                 }}>
                                     <Label size='massive' color='black' ribbon>
                                         <Statistic inverted size='tiny'>

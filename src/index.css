@@ -139,27 +139,30 @@ h3.ui.header{
 }
 
 .thermometerMainContainer .ui.segment.thermometerBlock:nth-child(1){
-    background-color: #b5cc18;
+    background-color: #f2711c;
 }
 .thermometerMainContainer .ui.segment.thermometerBlock:nth-child(2){
-    background-color: #21ba45;
+    background-color: #b5cc18;
 }
 .thermometerMainContainer .ui.segment.thermometerBlock:nth-child(3){
-    background-color: #00b5ad;
+    background-color: #21ba45;
 }
 .thermometerMainContainer .ui.segment.thermometerBlock:nth-child(4){
-    background-color: #2185d0;
+    background-color: #00b5ad;
 }
 .thermometerMainContainer .ui.segment.thermometerBlock:nth-child(5){
-    background-color: #6435c9;
+    background-color: #2185d0;
 }
 .thermometerMainContainer .ui.segment.thermometerBlock:nth-child(6){
-    background-color: #a333c8;
+    background-color: #6435c9;
 }
 .thermometerMainContainer .ui.segment.thermometerBlock:nth-child(7){
-    background-color: #e054a4;
+    background-color: #a333c8;
 }
 .thermometerMainContainer .ui.segment.thermometerBlock:nth-child(8){
+    background-color: #e054a4;
+}
+.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(9){
     background-color: #e03997;
 }
 

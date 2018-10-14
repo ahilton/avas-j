@@ -29,10 +29,10 @@ const InstagramSegment = () => (
                 </a>
             </Grid.Column>
             <Grid.Column width={6}>
-                <Instagram url={'BnPN8aDHY5P'}/>
+                <Instagram url={'Bo1H2kKn-w_'}/>
             </Grid.Column>
             <Grid.Column width={6} only='computer'>
-                <Instagram url={'BlXjA7Yg0Py'}/>
+                <Instagram url={'BoAh9bVH-FE'}/>
             </Grid.Column>
 
         </Grid>

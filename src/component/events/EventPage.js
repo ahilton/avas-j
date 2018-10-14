@@ -1,10 +1,9 @@
 import React from 'react'
 import {Button, Divider, Icon, Menu, Responsive, Segment} from "semantic-ui-react";
-import GalaEvent from "./GalaEvent";
 import EventWidget from "./EventWidget";
 import ZooEvent from "./ZooEvent";
-import ArtEvent from "./ArtEvent";
 import {HashLink as Link} from "react-router-hash-link";
+import GalaSegment from "../home/GalaSegment";
 
 const EventPage = () => (
 
@@ -23,17 +22,7 @@ const EventPage = () => (
                 Fundraising Events
             </h1>
             <Menu secondary stackable compact size='huge' className='eventMenu'>
-                <Menu.Item link>
-                    <Link smooth to={'#artEvent'}>
-                        <Icon name='cocktail'/>&nbsp;
-                        Art For Ava
-                    </Link>
-                </Menu.Item>
-                <Menu.Item as='a'
-                    // name='aboutUs'
-                    // active={activeItem === 'aboutUs'}
-                    // onClick={this.handleItemClick}
-                >
+                <Menu.Item as='a'>
                     <Link smooth to={'#zooEvent'}>
                         <Icon name='music'/>&nbsp;
                         Electric Zoo
@@ -48,49 +37,6 @@ const EventPage = () => (
 
             </Menu>
         </Segment>
-
-        <EventWidget {...{
-            bookingLink: <Button as='a' color='teal' href='http://art4ava.eventbrite.com.au' size='huge' style={{
-                backgroundColor:'#d77591',
-                // color:'while'
-            }}>
-                <Icon name='ticket'/>
-                Book Now
-            </Button>,
-            eventLink:'artEvent',
-            eventCell: <ArtEvent/>,
-            eventDate: [<span>Friday 12<sup>th</sup> Oct</span>, '6:30pm'],
-            eventLocation: ['Studio Gallery Melbourne','Cheltenham'],
-            eventTitle: 'Art For Ava',
-            eventDetail: <div className='artEvent'>
-                <h2 className='normal'><a href='http://art4ava.eventbrite.com.au'> Art For Ava</a></h2>
-                    <p>Want to know the secret to stunning art? And how to hang it like a pro? Keen to get some hints on design and styling? A dream team of
-                        <a href="https://www.instagram.com/kerryarmstrongart/" target="_blank" rel="noopener noreferrer nofollow"><strong> Kerry Armstrong</strong></a>, <a href="https://www.instagram.com/aimeestylist/" target="_blank" rel="noopener noreferrer nofollow"><strong>Aimee Tarulli</strong></a> and <a href="https://www.lightslightslights.com.au/about/danielle/" target="_blank" rel="noopener noreferrer nofollow"><strong>Danielle Mastro</strong></a> are coming together to reveal all while raising funds for <strong>Ava Wake</strong></p>
-                    <p>The $50 donation entry fee includes:</p>
-                    <ul>
-                        <li>
-                            <p><strong>an incredible panel of experts - </strong><strong>Kerry, Aimee and Danielle</strong></p>
-                        </li>
-                        <li>
-                            <p><strong>an epic and Insta-worthy <strong><a href="http://www.justgrazingthrough.com/" target="_blank" rel="noopener noreferrer nofollow">Just Grazing Through</a> </strong>cheese and grazing platter </strong></p>
-                        </li>
-                        <li>
-                            <p><strong>free-flowing bubbles and wine</strong></p>
-                        </li>
-                        <li>
-                            <p><strong>fabulous raffle prizes thanks to John Frieda, Molton Brown and Black Rock Cellars</strong></p>
-                        </li>
-                        <li>
-                            <p><strong>a great chance to win a <strong>door prize -</strong> a limited edition Kerry Armstrong piece valued at over $4,000</strong>!</p>
-                        </li>
-                    </ul>
-            </div>,
-            bgColor:'#eee'
-        }}/>
-
-        <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
-            <Divider section/>
-        </Responsive>
 
         <EventWidget {...{
             bookingLink: <Button as='a' color='teal' href='http://ezoo.eventbrite.com.au' size='huge' style={{
@@ -131,13 +77,15 @@ const EventPage = () => (
         </Responsive>
 
         <EventWidget {...{
-            bookingLink: <Button size='huge'>
+            bookingLink: <Button as='a' color='yellow' href='http://avasgala.eventbrite.com.au/' size='huge' style={{
+                // backgroundColor:'#d77591'
+            }}>
                 <Icon name='ticket'/>
-                On Sale Soon
+                Book Now
             </Button>,
             eventLink:'galaEvent',
-            eventCell: <GalaEvent/>,
-            eventDate: [<span>17<sup>th</sup> November</span>, '2018'],
+            eventCell: <GalaSegment/>,
+            eventDate: [<span>Saturday 17<sup>th</sup> Nov</span>, '7pm - 11pm'],
             eventLocation: ['Regent Theatre', 'Plaza Ballroom', 'Melbourne'],
             eventTitle: 'Ava\'s Gala',
             bgColor:'#eee',
