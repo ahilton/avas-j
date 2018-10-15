@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.a84400c2.css",
   "main.css.map": "static/css/main.a84400c2.css.map",
-  "main.js": "static/js/main.db450e95.js",
-  "main.js.map": "static/js/main.db450e95.js.map",
+  "main.js": "static/js/main.ef838e44.js",
+  "main.js.map": "static/js/main.ef838e44.js.map",
   "static/media/ava.jpg": "static/media/ava.9af4dfd5.jpg",
   "static/media/avaZoo.jpg": "static/media/avaZoo.3e5a0895.jpg",
   "static/media/ballroom-bg-2.jpg": "static/media/ballroom-bg-2.e086b647.jpg",
@@ -46,5 +46,10 @@
   "static/media/press-dailym-aus.png": "static/media/press-dailym-aus.d84ef93b.png",
   "static/media/press-dailym.png": "static/media/press-dailym.801961d5.png",
   "static/media/press-mama.png": "static/media/press-mama.5778a1bd.png",
-  "static/media/press-rc.png": "static/media/press-rc.cad57b26.png"
+  "static/media/press-rc.png": "static/media/press-rc.cad57b26.png",
+  "static/media/sponsor-gamekeepers.png": "static/media/sponsor-gamekeepers.c6f3b931.png",
+  "static/media/sponsor-grazing.png": "static/media/sponsor-grazing.f827a354.png",
+  "static/media/sponsor-lion.png": "static/media/sponsor-lion.ee050590.png",
+  "static/media/sponsor-sgm.jpeg": "static/media/sponsor-sgm.3667f548.jpeg",
+  "static/media/sponsors-7e.png": "static/media/sponsors-7e.c60b2f53.png"
 }
