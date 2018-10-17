@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.a84400c2.css",
   "main.css.map": "static/css/main.a84400c2.css.map",
-  "main.js": "static/js/main.ecdf83e5.js",
-  "main.js.map": "static/js/main.ecdf83e5.js.map",
+  "main.js": "static/js/main.c4fe6865.js",
+  "main.js.map": "static/js/main.c4fe6865.js.map",
   "static/media/ava.jpg": "static/media/ava.9af4dfd5.jpg",
   "static/media/avaZoo.jpg": "static/media/avaZoo.3e5a0895.jpg",
   "static/media/ballroom-bg-2.jpg": "static/media/ballroom-bg-2.e086b647.jpg",
@@ -47,6 +47,7 @@
   "static/media/press-mama.png": "static/media/press-mama.5778a1bd.png",
   "static/media/press-rc.png": "static/media/press-rc.cad57b26.png",
   "static/media/sponsor-afl.png": "static/media/sponsor-afl.b693af4c.png",
+  "static/media/sponsor-ap.png": "static/media/sponsor-ap.0aeb0eef.png",
   "static/media/sponsor-bim.png": "static/media/sponsor-bim.f78065af.png",
   "static/media/sponsor-brad.jpg": "static/media/sponsor-brad.c915739e.jpg",
   "static/media/sponsor-choc.jpg": "static/media/sponsor-choc.5178846c.jpg",
