@@ -42,10 +42,10 @@ class FundraisingEvent extends Component {
                             <Statistic.Value>{amount}</Statistic.Value>
                             <Statistic.Label>Raised</Statistic.Label>
                         </Statistic>
-                        <Image
+                        {imageSrc && <Image
                             size='small'
                             floated='right'
-                            src={imageSrc}/>
+                            src={imageSrc}/>}
                         {content}
                     </Segment>
                 </Responsive>
@@ -56,10 +56,10 @@ class FundraisingEvent extends Component {
                         marginTop: -50
                     }}>
                         <h1 className='normal' style={{marginBottom: 30}}>{title}</h1>
-                        <Image
+                        {imageSrc && <Image
                             size='medium'
                             floated='right'
-                            src={imageSrc}/>
+                            src={imageSrc}/>}
 
                         {content}
                     </Segment>

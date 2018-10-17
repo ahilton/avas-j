@@ -26,6 +26,7 @@ const Navigation = ({children}) => (
         <MenuLink to="/events" label="Events"/>
         <MenuLink to="/press" label="Press"/>
         <MenuLink to="/faq" label="FAQ"/>
+        <MenuLink to="/friends" label="Friends of Ava"/>
         {children}
     </Container>
 )

@@ -17,7 +17,6 @@ var fundraiseCoffeeImg = require('../img/fundraising-coffee.jpg')
 var fundraisePlayzoneImg = require('../img/fundraising-playzone.jpg')
 var fundraiseFFImg = require('../img/fundraising-fitnessfirst.jpg')
 var fundraisePaulaImg = require('../img/fundraising-paula.jpg')
-var fundraiseMovieImg = require('../img/fundraising-movie.png')
 var fundraiseArtImg = require('../img/fundraising-art2.jpg')
 var fundraiseDonationsImg = require('../img/insta-ava7.jpg')
 
@@ -80,7 +79,7 @@ class Thermometer extends Component {
             height: '5%',
             amount: '$1,541',
             title: 'Movie Fundraiser',
-            imageSrc: fundraiseMovieImg,
+            // imageSrc: fundraiseMovieImg,
             color: '#6435c9',
             content: <MovieBubble/>
         }, {

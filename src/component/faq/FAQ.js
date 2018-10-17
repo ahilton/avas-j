@@ -10,6 +10,7 @@ import WhyFaq from "./WhyFaq";
 import FamilyFaq from "./FamilyFaq";
 import FundraisingFaq from "./FundraisingFaq";
 import ParentsFaq from "./ParentsFaq";
+import CharityFaq from "./CharityFaq";
 
 var balloon = require('../../img/logo-t-balloon.png')
 
@@ -51,7 +52,11 @@ const qlist = [
         question: <div>What are the parents’ backgrounds? <br/> How are they managing work so that they can pay the
             bills with Ava being so unwell?</div>,
         component: <ParentsFaq/>
-    },
+    }, {
+        link: 'charity',
+        question: <div>Is Ava’s journey a registered charity? <br/> Can I claim my donation in my tax return?</div>,
+        component: <CharityFaq/>
+    }
 ]
 
 const FAQ = () => (

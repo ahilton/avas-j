@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Button, Grid, Icon, Image, Segment,} from 'semantic-ui-react'
+import {Button, Grid, Icon, Image, Responsive, Segment,} from 'semantic-ui-react'
 
 import plazaBackground from '../../img/ballroom-bg-2.jpg'
 import transparentLogo from '../../img/gala-transparent.png'
@@ -23,20 +23,23 @@ const GalaSegment = ({children, showDetail=false}) => (
                 paddingTop: 0
             }}>
                 <Grid.Column>
-                    {/*<h1 className='normal' style={{*/}
-                        {/*fontWeight: 200,*/}
-                        {/*fontSize: '3em',*/}
-                        {/*marginBottom: 0*/}
-                    {/*}}>*/}
-                        {/*Ava's Gala Dinner*/}
-                    {/*</h1>*/}
+                    <Responsive minWidth={600}>
+                        <Image
+                            size='big'
+                            centered
+                            src={transparentLogo}
+                            style={{marginBottom:-70}}
+                        />
+                    </Responsive>
+                    <Responsive maxWidth={600}>
+                        <Image
+                            size='big'
+                            centered
+                            src={transparentLogo}
+                            style={{marginBottom:-20}}
+                        />
+                    </Responsive>
 
-                    <Image
-                        size='big'
-                        centered
-                        src={transparentLogo}
-                        style={{marginBottom:-70}}
-                    />
 
                     {showDetail && <h3 className='normal' style={{
                         fontWeight: 300,
@@ -52,11 +55,13 @@ const GalaSegment = ({children, showDetail=false}) => (
                         marginTop: 0,
                         marginBottom: 30
                     }}>
-                        Regent Theatre
-                        <span style={{color: '#cccccc'}}>,&nbsp;&nbsp;</span>
-                        Plaza Ballroom
-                        <span style={{color: '#cccccc'}}>,&nbsp;&nbsp;</span>
-                        Melbourne
+                        <Responsive as='span' minWidth={600}>
+                            <div style={{whiteSpace:'nowrap', display:'inline'}}>Regent Theatre,</div>
+                            <span style={{color: '#cccccc'}}>&nbsp;&nbsp;</span>
+                        </Responsive>
+                        <div style={{whiteSpace:'nowrap', display:'inline'}}>Plaza Ballroom,</div>
+                        <span style={{color: '#cccccc'}}>&nbsp;&nbsp;</span>
+                        <span style={{whiteSpace:'nowrap'}}>Melbourne</span>
                     </h3>}
                     {children}
                     {showDetail && <p style={{fontSize: '1.33em'}}>

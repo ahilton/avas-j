@@ -23,31 +23,49 @@ const EventPage = () => (
             </h1>
             <Menu secondary stackable compact size='huge' className='eventMenu'>
                 <Menu.Item as='a'>
-                    <Link smooth to={'#zooEvent'}>
-                        <Icon name='music'/>&nbsp;
-                        Electric Zoo
-                    </Link>
-                </Menu.Item>
-                <Menu.Item as='a'>
                     <Link smooth to={'#galaEvent'}>
                         <Icon name='star'/>&nbsp;
                         Gala
                     </Link>
                 </Menu.Item>
-
+                <Menu.Item as='a'>
+                    <Link smooth to={'#zooEvent'}>
+                        <Icon name='music'/>&nbsp;
+                        Electric Zoo
+                    </Link>
+                </Menu.Item>
             </Menu>
         </Segment>
 
+
+
+
         <EventWidget {...{
-            bookingLink: <Button as='a' color='teal' href='http://ezoo.eventbrite.com.au' size='huge' style={{
+            bookingLink: <Button as='a' color='yellow' href='http://avasgala.eventbrite.com.au/' size='huge' style={{
                 // backgroundColor:'#d77591'
             }}>
                 <Icon name='ticket'/>
                 Book Now
             </Button>,
+            eventLink:'galaEvent',
+            eventCell: <GalaSegment/>,
+            eventDate: [<span>Saturday 17<sup>th</sup> Nov</span>, '7pm - 11pm'],
+            eventLocation: ['Regent Theatre', 'Plaza Ballroom', 'Melbourne'],
+            eventTitle: 'Ava\'s Gala',
+            bgColor:'#eee',
+            eventDetail: <div >
+            </div>
+        }}/>
+
+        <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
+            <Divider section/>
+        </Responsive>
+
+
+        <EventWidget {...{
             eventLink:'zooEvent',
             eventCell: <ZooEvent/>,
-            eventDate: [<span>Sunday 28<sup>th</sup> Oct</span>, '12pm – 5:30pm'],
+            eventDate: ['POSTPONED'],
             eventLocation: ['Mentone Lifesaving Club'],
             eventTitle: 'Ava\'s Electric Zoo',
             eventDetail: <div className='zooEvent'>
@@ -70,27 +88,6 @@ const EventPage = () => (
                 </ul>
             </div>,
             bgColor:'#eee'
-        }}/>
-
-        <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
-            <Divider section/>
-        </Responsive>
-
-        <EventWidget {...{
-            bookingLink: <Button as='a' color='yellow' href='http://avasgala.eventbrite.com.au/' size='huge' style={{
-                // backgroundColor:'#d77591'
-            }}>
-                <Icon name='ticket'/>
-                Book Now
-            </Button>,
-            eventLink:'galaEvent',
-            eventCell: <GalaSegment/>,
-            eventDate: [<span>Saturday 17<sup>th</sup> Nov</span>, '7pm - 11pm'],
-            eventLocation: ['Regent Theatre', 'Plaza Ballroom', 'Melbourne'],
-            eventTitle: 'Ava\'s Gala',
-            bgColor:'#eee',
-            eventDetail: <div >
-            </div>
         }}/>
 
     </div>
