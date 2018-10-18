@@ -17,7 +17,7 @@ const EventWidget = ({
     <Grid  container centered stackable style={{
         // backgroundColor: 'black',
         marginTop: '5em',
-        marginBottom: '3em'
+        // marginBottom: '3em'
     }}>
         {/*<Grid.Row textAlign='center'>*/}
 
@@ -92,9 +92,9 @@ const EventWidget = ({
                     {bookingLink}
                 </p>
 
-                <div style={{fontSize:'0.8em'}}>
-                    {eventDetail}
-                </div>
+                {/*<div style={{fontSize:'0.8em'}}>*/}
+                    {/*{eventDetail}*/}
+                {/*</div>*/}
             </div>
         </Grid.Column>
 
@@ -106,7 +106,7 @@ const EventWidget = ({
             {/*</Grid.Column>*/}
         {/*</Grid.Row>*/}
 
-        <Grid.Row only={'tablet computer'} textAlign='left' >
+        <Grid.Row textAlign='left' >
             {/*<Container text>*/}
                 <Grid.Column width={14} style={{
                     fontSize:'1.2em',

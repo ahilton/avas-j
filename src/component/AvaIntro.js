@@ -12,6 +12,7 @@ import AvaIntroText from "./AvaIntroText";
 import AvaIntroButtons from "./AvaIntroButtons";
 
 var ava = require('../img/ava.jpg')
+var avasq = require('../img/ava-sq.jpg')
 
 const AvaIntro = ({ mobile }) => (
     <Segment className='ava-intro' vertical>
@@ -35,7 +36,7 @@ const AvaIntro = ({ mobile }) => (
                 </Responsive>
                 <Responsive maxWidth={600}>
                     <Container textAlign={'center'} style={{marginBottom:'2em'}}>
-                        <Image bordered rounded size='medium' src={ava} style={{display:'inline-block'}}/>
+                        <Image bordered circular size='medium' src={avasq} style={{display:'inline-block'}}/>
                     </Container>
                     <AvaIntroText/>
                     <AvaIntroButtons mobile/>

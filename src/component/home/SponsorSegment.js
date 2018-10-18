@@ -32,6 +32,8 @@ import trulys from '../../img/sponsor-trulys.jpg'
 import hoflowers from '../../img/sponsor-hoflowers.png'
 import brad from '../../img/sponsor-brad.jpg'
 import et from '../../img/sponsor-et.jpg'
+import ap from '../../img/sponsor-ap.png'
+import mw from '../../img/sponsor-mw.jpg'
 
 
 const sponsors = [
@@ -51,6 +53,11 @@ const sponsors = [
         img: ff,
         info: 'Fundraising and caring for Ava from the very beginning. Thank you!'
     },{
+        name: 'Audrey Paige Communications',
+        url: 'http://www.audreypaige.com/',
+        img: ap,
+        info: "Audrey has been a key member of Ava's fundraising team from the very beginning. Thank you!"
+    },{
         name: 'Just Grazing Through',
         url: 'http://www.justgrazingthrough.com/',
         img: grazing,
@@ -65,6 +72,11 @@ const sponsors = [
         url: 'http://lionco.com/',
         img: lion,
         info: 'Helping us with beverage donations. Thank you!'
+    },{
+        name: 'Marshall White',
+        url: 'http://www.MarshallWhite.com.au',
+        img: mw,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
     },{
         name: 'Gamekeepers',
         url: 'http://gamekeepersmeat.com.au/',
@@ -222,7 +234,7 @@ const SponsorSegment = ({children, big=false, size}) => (
                         color:'black'
                     }}>Friends of Ava</h2>}
                     {sponsors.map(x=>
-                        <div style={{display:'inline', margin:'1em'}}>
+                        <div style={{display:'inline', marginTop:'1em'}}>
                             <Popup
                                 key={x.name}
                                 trigger={<Image as='a' style={{margin:'1em'}} href={x.url} inline rounded size={size} src={x.img}/>}
@@ -230,7 +242,7 @@ const SponsorSegment = ({children, big=false, size}) => (
                                 content={x.info}
                             />
                         </div>)}
-                    {!big && intro}
+                        {!big && intro}
                 </Grid.Column>
             </Grid.Row>
         </Grid>

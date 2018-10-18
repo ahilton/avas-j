@@ -22,8 +22,8 @@ const Navigation = ({children}) => (
 
     <Container>
         <MenuLink activeOnlyWhenExact={true} to="/" label="Home"/>
-        {/*<MenuLink to="/gala" label="Gala"/>*/}
-        <MenuLink to="/events" label="Events"/>
+        <MenuLink to="/gala" label="Gala"/>
+        {/*<MenuLink to="/events" label="Events"/>*/}
         <MenuLink to="/press" label="Press"/>
         <MenuLink to="/faq" label="FAQ"/>
         <MenuLink to="/friends" label="Friends of Ava"/>

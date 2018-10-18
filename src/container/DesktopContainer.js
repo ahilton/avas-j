@@ -60,7 +60,7 @@ class DesktopContainer extends Component {
                             pointing={!showFixed}
                             secondary={!showFixed}
                             size='large'
-                            style={{marginTop: 0, fontSize: '1.4em'}}
+                            style={{marginTop: 0, fontSize: '1.31em'}}
                             borderless
                         >
                             <Navigation>

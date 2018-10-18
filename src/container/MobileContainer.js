@@ -65,22 +65,42 @@ class MobileContainer extends Component {
                             <Container stlye={{
 
                             }}>
+
                                 <Menu inverted pointing secondary>
                                     <Menu.Item onClick={this.handleToggle}>
                                         <Icon name='sidebar' size='big'/>
+                                        <span style={{fontSize:'1.5em'}}>MENU</span>
                                     </Menu.Item>
+                                    <Responsive minWidth={500}>
+                                    <Menu.Item as='a' href='https://www.gofundme.com/jupcnf-avas-journey/donate' style={{
+                                        backgroundColor:'#F3E598',
+                                        //color: 'black',
+                                        fontSize:'1.4em',
+                                        borderRadius:'1em',
+                                        marginLeft: '0.5em'
+                                    }}>
+                                        <span style={{color:'black'}}>Donate</span>
+                                    </Menu.Item>
+                                    </Responsive>
+
+
                                     <Menu.Item position='right' >
                                         <img src={logo}
                                              style={{
                                                  position: 'absolute',
-                                                 width: '14em',
-                                                 bottom:'-2em',
-                                                 left: '-12em'
+                                                 width: '16em',
+                                                 bottom:'-3.8em',
+                                                 left: '-13em',
+                                                 zIndex:100
                                              }}
                                         />
                                     </Menu.Item>
                                 </Menu>
+
+
                             </Container>
+
+
                             {isHome && <AvaIntro mobile/>}
                         </Segment>
 

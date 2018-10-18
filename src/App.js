@@ -22,8 +22,11 @@ const App = ({children}) => (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTopComponent>
             <Route exact path="/" component={HomepageLayout}/>
-            <Route path="/gala" component={GalaLayout}/>
-            <Route path="/events" component={EventsLayout}/>
+            {/*<Route path="/gala" component={GalaLayout}/>*/}
+            {/*<Route path="/events" component={EventsLayout}/>*/}
+            <Route path="/events" component={GalaLayout}/>
+            <Route path="/gala-dinner" component={GalaLayout}/>
+            <Route path="/gala" component={EventsLayout}/>
             <Route path="/press" component={PressLayout}/>
             <Route path="/faq" component={FAQLayout}/>
             <Route path="/friends" component={FriendsLayout}/>
@@ -60,8 +63,11 @@ const EventsLayout = () => (
     </ResponsiveContainer>
 )
 const GalaLayout = () => (
-    <Redirect to="/events#galaEvent" />
+    <Redirect to="/gala" />
 )
+// const GalaLayout = () => (
+//     <Redirect to="/events#galaEvent" />
+// )
 const FriendsLayout = () => (
     <ResponsiveContainer>
         <Segment basic textAlign='center' padded='very' style={{
