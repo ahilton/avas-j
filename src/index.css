@@ -3,7 +3,6 @@
 /*padding: 0;*/
 /*font-family: sans-serif;*/
 /*}*/
-
 /*.ui.inverted.segment, .ui.primary.inverted.segment {*/
 /*background: rgba(29, 10, 18, 0.64);*/
 /*color: rgba(255,255,255,.9);*/
@@ -12,6 +11,7 @@
 /*@import url('https://fonts.googleapis.com/css?family=Anton|Nanum+Gothic');*/
 /*Biryani|Kalam|Cinzel|*/
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Poppins');
+
 .homeHeader.ui.inverted.segment {
     background-color: #41BAAE;
 }
@@ -20,6 +20,7 @@
     background-color: #41BAAE;
     color: white;
 }
+
 .homeHeader .ui.fixed.menu .item {
     color: white;
 }
@@ -27,24 +28,26 @@
 .homeHeader .ui.inverted.menu {
     border: none;
 }
+
 .homeHeader .ui.secondary.inverted.pointing.menu {
     border: none;
 }
 
-.ui h1, .ui  h2, .ui h3,
-h3.ui.header{
-    font-family:  'Gloria Hallelujah', 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serifq;
+.ui h1, .ui h2, .ui h3,
+h3.ui.header {
+    font-family: 'Gloria Hallelujah', 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serifq;
 }
 
-.ui h1.normal, .ui  h2.normal, .ui h3.normal{
-    font-family:  'Lato', 'Helvetica Neue','Arial','Helvetica','sans-serif'
+.ui h1.normal, .ui h2.normal, .ui h3.normal {
+    font-family: 'Lato', 'Helvetica Neue', 'Arial', 'Helvetica', 'sans-serif'
 }
-.ui h1.thin, .ui  h2.thin, .ui h3.thin{
+
+.ui h1.thin, .ui h2.thin, .ui h3.thin {
     font-weight: 200;
 }
 
 .gala.ui.segment {
-    color:white;
+    color: white;
     font-size: 1.5em;
 }
 
@@ -69,47 +72,54 @@ h3.ui.header{
 .homeHeader .ui.button {
     background-color: #F3E598;
 }
+
 .homeHeader .ui.button:hover {
     background-color: #EDD23B;
 }
 
-
-.ui.segment.thermometerSegment{
+.ui.segment.thermometerSegment {
     margin-top: 0;
     /*margin-bottom: 100px;*/
     padding: 4em 0em;
-    background-color:#f4f4f4;
+    background-color: #f4f4f4;
 }
-.thermometerGrid{
+
+.thermometerGrid {
     margin-top: 150px;
     /*height: 700px;*/
     /*min-height: 700px;*/
 }
-.thermometerColumn{
+
+.thermometerColumn {
     /*//background-color: red;*/
 }
-.thermometerDetailColumn{
+
+.thermometerDetailColumn {
 
 }
-.thermometerContainer{
+
+.thermometerContainer {
     height: 100%;
     max-width: 120px;
     min-width: 120px;
     width: 120px;
     margin: 0 auto 0 auto;
-    border:10px solid #ddd;
+    border: 10px solid #ddd;
     border-bottom: 0;
     border-top: 0;
 }
-.thermometerTopContainer{
-    height:35%;
+
+.thermometerTopContainer {
+    height: 35%;
 }
-.thermometerMainContainer{
-    height:65%;
+
+.thermometerMainContainer {
+    height: 65%;
     /* HACK TO FIX SMALL GAP ON MOBILE CHROME*/
     /*margin-top:-1px*/
 }
-.thermometerBottomContainer{
+
+.thermometerBottomContainer {
     max-width: 140px;
     min-width: 140px;
     width: 140px;
@@ -118,62 +128,72 @@ h3.ui.header{
     height: 140px;
     border-radius: 75px;
     background-color: #e03997;
-    border:10px solid #ddd;
+    border: 10px solid #ddd;
     margin-top: -37px;
 }
 
-.thermometerMobileBottomContainer{
+.thermometerMobileBottomContainer {
     border-bottom: 10px solid #ddd;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
 }
 
-.ui.segment.thermometerBlock{
-    margin:0;
+.ui.segment.thermometerBlock {
+    margin: 0;
     border-radius: 0px;
-    border:none
+    border: none
 }
 
-.thermometerGrid .ui.medium.image{
+.thermometerGrid .ui.medium.image {
     width: 250px;
 }
 
-.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(1){
+.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(1) {
     background-color: #f2711c;
 }
-.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(2){
+
+.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(2) {
     background-color: #b5cc18;
 }
-.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(3){
+
+.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(3) {
     background-color: #21ba45;
 }
-.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(4){
+
+.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(4) {
     background-color: #00b5ad;
 }
-.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(5){
+
+.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(5) {
     background-color: #2185d0;
 }
-.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(6){
+
+.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(6) {
     background-color: #6435c9;
 }
-.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(7){
+
+.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(7) {
     background-color: #a333c8;
 }
-.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(8){
+
+.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(8) {
     background-color: #e054a4;
 }
-.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(9){
+
+.thermometerMainContainer .ui.segment.thermometerBlock:nth-child(9) {
     background-color: #e03997;
 }
 
-.thermometerGrid.ui.grid>.row{
-    padding-top:0;
-    padding-bottom:0;
+.thermometerGrid.ui.grid > .row {
+    padding-top: 0;
+    padding-bottom: 0;
 }
-.thermometerTopContainer .ui.statistic .label{
+
+.thermometerTopContainer .ui.statistic .label {
     font-weight: 300;
     font-size: 0.7em;
 }
+
 .thermometerPointer {
     width: 300px;
     height: 10px;
@@ -183,21 +203,25 @@ h3.ui.header{
     left: 50px
 }
 
-.faq-page .list>.item:before,
-.faq-page .ui.bulleted.list>.item:before,
+.faq-page .list > .item:before,
+.faq-page .ui.bulleted.list > .item:before,
 .faq-page ul.ui.list li:before {
     color: #dddddd
 }
 
-.faq-page .ui.list>.item:after,
-.faq-page .ui.list>.list>.item,
-.faq-page ul.ui.list>li:first-child:after {
+.faq-page .ui.list > .item:after,
+.faq-page .ui.list > .list > .item,
+.faq-page ul.ui.list > li:first-child:after {
     clear: left
 }
 
-#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
 
-.faq-page .ui ul li{
+.faq-page .ui ul li {
     margin-bottom: 5px;
 }
 
@@ -206,38 +230,43 @@ h3.ui.header{
     margin-bottom: 3em;
 }
 
-.ui.stackable.grid>.wide.column.mobileEvent {
-    padding: 0 0!important
+.ui.stackable.grid > .wide.column.mobileEvent {
+    padding: 0 0 !important
 }
 
 .eventPage
 .artEvent
-a{
-    color:#d77591
+a {
+    color: #d77591
 }
 
 .eventPage
 .zooEvent
-a{
-    color:#41BAAE
+a {
+    color: #41BAAE
 }
 
 .eventPage .artEvent h2 a,
-.eventPage .zooEvent h2 a{
-    color:#444
+.eventPage .zooEvent h2 a {
+    color: #444
 }
-.eventPage h2 a:hover{
-    color:#000
+
+.eventPage h2 a:hover {
+    color: #000
 }
-.eventMenu a{
-    color:#333
+
+.eventMenu a {
+    color: #333
 }
-.eventMenu a:hover{
-    color:#000
+
+.eventMenu a:hover {
+    color: #000
 }
-a.webmasterlink{
-    color:#666
+
+a.webmasterlink {
+    color: #939393
 }
-a.webmasterlink:hover{
-    color:#777
+
+a.webmasterlink:hover {
+    color: #c9c9c9
 }

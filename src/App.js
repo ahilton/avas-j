@@ -6,17 +6,17 @@ import DesktopContainer from "./container/DesktopContainer";
 import MobileContainer from "./container/MobileContainer";
 import Thermometer from "./component/Thermometer";
 
-import {BrowserRouter, Redirect, Route, withRouter} from "react-router-dom";
+import {BrowserRouter, Link, Redirect, Route, withRouter} from "react-router-dom";
 import FAQ from "./component/faq/FAQ";
 import InstagramSegment from "./component/home/InstagramSegment";
 import FAQSegment from "./component/home/FAQSegment";
 import Footer from "./component/Footer";
-import EventsSegment from "./component/home/EventsSegment";
+import Video10Segment from "./component/home/Video10Segment";
 import Press from "./component/press/Press";
 import EventPage from "./component/events/EventPage";
 import GalaSegment from "./component/home/GalaSegment";
 import SponsorSegment from "./component/home/SponsorSegment";
-import {Responsive, Segment} from "semantic-ui-react";
+import {Button, Responsive, Segment} from "semantic-ui-react";
 
 const App = ({children}) => (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -63,7 +63,7 @@ const EventsLayout = () => (
     </ResponsiveContainer>
 )
 const GalaLayout = () => (
-    <Redirect to="/gala" />
+    <Redirect to="/gala"/>
 )
 // const GalaLayout = () => (
 //     <Redirect to="/events#galaEvent" />
@@ -76,11 +76,11 @@ const FriendsLayout = () => (
             backgroundColor: '#eee'
         }}>
             <h1 className='normal' style={{
-                fontWeight:300,
+                fontWeight: 300,
                 fontSize: '3em',
                 //color:'white',
-                marginTop:30,
-                marginBottom:-20
+                marginTop: 30,
+                marginBottom: -20
             }}>
                 Friends of Ava
             </h1>
@@ -98,15 +98,20 @@ const HomepageLayout = () => (
     <ResponsiveContainer>
         <GalaSegment showDetail/>
         <FAQSegment/>
+        <Video10Segment detail>
+            <div style={{marginTop: 40}}>
+                <Link to="/press"><Button inverted size='massive'>More...</Button></Link>
+            </div>
+        </Video10Segment>
         <Thermometer/>
         <InstagramSegment/>
         {/*<Responsive minWidth={Responsive.onlyMobile.maxWidth}>*/}
-            {/*<SponsorSegment size='small'/>*/}
+        {/*<SponsorSegment size='small'/>*/}
         {/*</Responsive>*/}
         {/*<Responsive maxWidth={Responsive.onlyMobile.maxWidth}>*/}
-            {/*<SponsorSegment size='tiny'/>*/}
+        {/*<SponsorSegment size='tiny'/>*/}
         {/*</Responsive>*/}
-        <EventsSegment/>
+
     </ResponsiveContainer>
 )
 

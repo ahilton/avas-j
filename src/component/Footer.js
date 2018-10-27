@@ -4,7 +4,7 @@ import {Container, Grid, List, Segment,} from 'semantic-ui-react'
 
 const Footer = () => (
 
-    <Segment inverted vertical style={{padding: '5em 0em', fontSize:'1.1em'}}>
+    <Segment inverted vertical style={{padding: '5em 0em', fontSize: '1.4em'}}>
         <Container>
             <Grid divided inverted centered stackable>
                 <Grid.Row>
@@ -21,13 +21,13 @@ const Footer = () => (
                         </List>
                     </Grid.Column>
                     {/*<Grid.Column width={3}>*/}
-                        {/*<Header inverted as='h4' content='Services'/>*/}
-                        {/*<List link inverted>*/}
-                            {/*<List.Item as='a'>Banana Pre-Order</List.Item>*/}
-                            {/*<List.Item as='a'>DNA FAQ</List.Item>*/}
-                            {/*<List.Item as='a'>How To Access</List.Item>*/}
-                            {/*<List.Item as='a'>Favorite X-Men</List.Item>*/}
-                        {/*</List>*/}
+                    {/*<Header inverted as='h4' content='Services'/>*/}
+                    {/*<List link inverted>*/}
+                    {/*<List.Item as='a'>Banana Pre-Order</List.Item>*/}
+                    {/*<List.Item as='a'>DNA FAQ</List.Item>*/}
+                    {/*<List.Item as='a'>How To Access</List.Item>*/}
+                    {/*<List.Item as='a'>Favorite X-Men</List.Item>*/}
+                    {/*</List>*/}
                     {/*</Grid.Column>*/}
                     <Grid.Column width={9}>
                         {/*<Header as='h4' inverted>*/}
@@ -71,7 +71,7 @@ const Footer = () => (
                                     </div>
                                     <div className="clear">
                                         <input type="submit" value="Subscribe" name="subscribe"
-                                                                  id="mc-embedded-subscribe" className="button"/>
+                                               id="mc-embedded-subscribe" className="button"/>
                                     </div>
                                 </div>
                             </form>
@@ -80,10 +80,13 @@ const Footer = () => (
                 </Grid.Row>
                 <Grid.Row>
                     <div style={{
-                        marginTop:10,
-                        color:'#555'
+                        marginTop: 10,
+                        color: '#777777',
+                        fontSize: '0.9em',
+                        fontWeight: 300
                     }}>
-                        Website Design by <b><a className='webmasterlink' href='mailto:ahilton@gmail.com'>Zut Studios</a></b> - 2018
+                        Website by <b><a className='webmasterlink' href='mailto:ahilton@gmail.com'>Zut Studios</a></b> -
+                        2018
                     </div>
                 </Grid.Row>
             </Grid>
