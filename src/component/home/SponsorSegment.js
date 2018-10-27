@@ -35,6 +35,17 @@ import et from '../../img/sponsor-et.jpg'
 import ap from '../../img/sponsor-ap.png'
 import mw from '../../img/sponsor-mw.jpg'
 
+import audioActive from '../../img/sponsor-audioActive.png'
+import bull from '../../img/sponsor-bull.jpg'
+import cBlank from '../../img/sponsor-cBlank.png'
+import colling from '../../img/sponsor-colling.jpg'
+import hawks from '../../img/sponsor-hawks.jpg'
+import jag from '../../img/sponsor-jag.png'
+import kallure from '../../img/sponsor-kallure.png'
+import silver from '../../img/sponsor-orig-silver.png'
+import pa from '../../img/sponsor-pa.png'
+import tla from '../../img/sponsor-tla.jpg'
+
 
 const sponsors = [
     {
@@ -76,6 +87,56 @@ const sponsors = [
         name: 'Marshall White',
         url: 'http://www.MarshallWhite.com.au',
         img: mw,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Audio Active',
+        url: 'https://audioactive.com.au/',
+        img: audioActive,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Western Bulldogs',
+        url: 'http://www.westernbulldogs.com.au/',
+        img: bull,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Christopher Blank',
+        url: 'https://christopherblank.com.au/',
+        img: cBlank,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Collingwood Football Club',
+        url: 'http://www.collingwoodfc.com.au/',
+        img: colling,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Hawthorn Football Club',
+        url: 'http://www.hawthornfc.com.au/',
+        img: hawks,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Jaggad',
+        url: 'https://www.jaggad.com/',
+        img: jag,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'KA\'LLURE',
+        url: 'http://www.kallurejewellery.com/',
+        img: kallure,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Smallprint - The Original Silver Keepsake Company',
+        url: 'https://www.smallprint.com/',
+        img: silver,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Peter Alexander',
+        url: 'https://www.peteralexander.com.au/shop/en/peteralexander',
+        img: pa,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'TLA',
+        url: 'http://tlaworldwide.com/',
+        img: tla,
         info: 'Supporting Ava\'s Gala night. Thank you!'
     },{
         name: 'Gamekeepers',
