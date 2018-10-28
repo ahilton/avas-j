@@ -22,7 +22,7 @@ const Video10Segment = ({detail, children}) => (
                     fontSize: '1.6em',
                     fontWeight: 300
                 }}>
-                <b>The Project</b> | Channel 10
+                <b>The Project</b> | Ten
             </span>
             </p>
         </Container>
