@@ -46,6 +46,10 @@ import silver from '../../img/sponsor-orig-silver.png'
 import pa from '../../img/sponsor-pa.png'
 import tla from '../../img/sponsor-tla.jpg'
 
+import audible from '../../img/sponsor-audible.png'
+import muka from '../../img/sponsor-muka.jpg'
+import rara from '../../img/sponsor-rara.png'
+import smallprint from '../../img/sponsor-smallprint.jpg'
 
 const sponsors = [
     {
@@ -126,7 +130,7 @@ const sponsors = [
     },{
         name: 'Smallprint - The Original Silver Keepsake Company',
         url: 'https://www.smallprint.com/',
-        img: silver,
+        img: smallprint,
         info: 'Supporting Ava\'s Gala night. Thank you!'
     },{
         name: 'Peter Alexander',
@@ -143,6 +147,21 @@ const sponsors = [
         url: 'http://gamekeepersmeat.com.au/',
         img: gk,
         info: 'Helping our fundraising BBQs taste delicious. Thank you!'
+    },{
+        name: 'Rara Architecture',
+        url: 'https://www.raraarchitecture.com.au/',
+        img: rara,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Muka Portraits',
+        url: 'https://mukaportraits.com.au/',
+        img: muka,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Audible',
+        url: 'https://www.audible.com.au/',
+        img: audible,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
     },{
         name: '7 Elements',
         url: 'https://www.7elements.com.au/',

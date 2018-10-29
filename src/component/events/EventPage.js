@@ -114,12 +114,12 @@ const EventPage = () => (
                     magical night in <b style={{color: '#fae1a3'}}>New York.</b>
                 </p>
                 <p>
-                    <b style={{color: '#fae1a3'}}>Former Chin Chin Chef, David Ricardo,</b> will delight tastebuds with
+                    <b style={{color: '#fae1a3'}}>Head Chef, David Ricardo,</b> will delight tastebuds with
                     drinks and canapés on arrival as well as an
                     <b style={{color: '#fae1a3'}}> exquisite three-course culinary experience</b>.
                 </p>
                 <p>
-                    <b style={{color: '#fae1a3'}}>Set in the glittering Grand Plaza Ballroom</b>, our guest host
+                    <b style={{color: '#fae1a3'}}>Set in the glittering Plaza Ballroom</b>, our guest host
                     will entertain between acts from talented performers,
                     the <b style={{color: '#fae1a3'}}>auctioning of incredible items</b>, as well as our Keynote speaker
                     <b style={{color: '#fae1a3'}}>Col Reynolds (OAM)</b> who will share his inspiring story of how he
