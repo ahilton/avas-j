@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.7e2fc0bf.css",
   "main.css.map": "static/css/main.7e2fc0bf.css.map",
-  "main.js": "static/js/main.eb237992.js",
-  "main.js.map": "static/js/main.eb237992.js.map",
+  "main.js": "static/js/main.6c774e92.js",
+  "main.js.map": "static/js/main.6c774e92.js.map",
   "static/media/ava-sq.jpg": "static/media/ava-sq.a4364d72.jpg",
   "static/media/ava.jpg": "static/media/ava.9af4dfd5.jpg",
   "static/media/ballroom-bg-2.jpg": "static/media/ballroom-bg-2.e086b647.jpg",
@@ -60,6 +60,7 @@
   "static/media/sponsor-et.jpg": "static/media/sponsor-et.c30c1968.jpg",
   "static/media/sponsor-furphy.png": "static/media/sponsor-furphy.02466f88.png",
   "static/media/sponsor-gamekeepers.png": "static/media/sponsor-gamekeepers.c6f3b931.png",
+  "static/media/sponsor-grammar.jpg": "static/media/sponsor-grammar.180301c3.jpg",
   "static/media/sponsor-grazing.png": "static/media/sponsor-grazing.f827a354.png",
   "static/media/sponsor-hawks.jpg": "static/media/sponsor-hawks.2127ef61.jpg",
   "static/media/sponsor-hoflowers.png": "static/media/sponsor-hoflowers.e523ced0.png",
