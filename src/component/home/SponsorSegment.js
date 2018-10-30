@@ -45,11 +45,16 @@ import kallure from '../../img/sponsor-kallure.png'
 import silver from '../../img/sponsor-orig-silver.png'
 import pa from '../../img/sponsor-pa.png'
 import tla from '../../img/sponsor-tla.jpg'
-
 import audible from '../../img/sponsor-audible.png'
 import muka from '../../img/sponsor-muka.jpg'
 import rara from '../../img/sponsor-rara.png'
 import smallprint from '../../img/sponsor-smallprint.jpg'
+import taylor from '../../img/sponsor-taylormade.png'
+import furphy from '../../img/sponsor-furphy.png'
+
+import grammar from '../../img/sponsor-grammar.jpg'
+import glam from '../../img/sponsor-glam.png'
+import motto from '../../img/sponsor-motto.png'
 
 const sponsors = [
     {
@@ -87,6 +92,31 @@ const sponsors = [
         url: 'http://lionco.com/',
         img: lion,
         info: 'Helping us with beverage donations. Thank you!'
+    },{
+        name: 'Furphy',
+        url: 'http://lionco.com/',
+        img: furphy,
+        info: 'Helping us with beverage donations. Thank you!'
+    },{
+        name: 'TaylorMade',
+        url: 'https://taylormadegolf.com.au/',
+        img: taylor,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Peninsula Grammar',
+        url: 'https://www.peninsulagrammar.vic.edu.au/',
+        img: grammar,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Glam Corner',
+        url: 'https://www.glamcorner.com.au/',
+        img: glam,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Motto Creative',
+        url: 'http://www.mottocreative.com.au/',
+        img: motto,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
     },{
         name: 'Marshall White',
         url: 'http://www.MarshallWhite.com.au',
