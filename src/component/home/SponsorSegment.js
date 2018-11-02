@@ -55,6 +55,10 @@ import furphy from '../../img/sponsor-furphy.png'
 import grammar from '../../img/sponsor-grammar.jpg'
 import glam from '../../img/sponsor-glam.png'
 import motto from '../../img/sponsor-motto.png'
+import buxton from '../../img/sponsor-buxton.png'
+import aia from '../../img/sponsor-aia.png'
+import ao from '../../img/sponsor-ao.png'
+import prol from '../../img/sponsor-prol.png'
 
 const sponsors = [
     {
@@ -72,6 +76,11 @@ const sponsors = [
         url: 'https://www.fitnessfirst.com.au/',
         img: ff,
         info: 'Fundraising and caring for Ava from the very beginning. Thank you!'
+    },{
+        name: 'Buxton',
+        url: 'https://buxton.com.au/',
+        img: buxton,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
     },{
         name: 'Audrey Paige Communications',
         url: 'http://www.audreypaige.com/',
@@ -108,6 +117,21 @@ const sponsors = [
         img: grammar,
         info: 'Supporting Ava\'s Gala night. Thank you!'
     },{
+        name: 'AIA',
+        url: 'http://www.aia.com.au/',
+        img: aia,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Pro Light & Sound',
+        url: 'https://prolightandsound.com.au/',
+        img: prol,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Australian Open',
+        url: 'https://ausopen.com/',
+        img: ao,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
         name: 'Glam Corner',
         url: 'https://www.glamcorner.com.au/',
         img: glam,
@@ -116,11 +140,6 @@ const sponsors = [
         name: 'Motto Creative',
         url: 'http://www.mottocreative.com.au/',
         img: motto,
-        info: 'Supporting Ava\'s Gala night. Thank you!'
-    },{
-        name: 'Marshall White',
-        url: 'http://www.MarshallWhite.com.au',
-        img: mw,
         info: 'Supporting Ava\'s Gala night. Thank you!'
     },{
         name: 'Audio Active',

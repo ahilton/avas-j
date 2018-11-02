@@ -4,7 +4,7 @@ import EventWidget from "./EventWidget";
 import GalaSegment from "../home/GalaSegment";
 
 var img = require('../../img/ava-sq.jpg')
-var galSponsors = require('../../img/gala-sponsors.jpg')
+var galSponsors = require('../../img/gala-sponsors.png')
 
 const EventPage = () => (
 
