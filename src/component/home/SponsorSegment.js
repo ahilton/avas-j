@@ -59,6 +59,7 @@ import buxton from '../../img/sponsor-buxton.png'
 import aia from '../../img/sponsor-aia.png'
 import ao from '../../img/sponsor-ao.png'
 import prol from '../../img/sponsor-prol.png'
+import propharma from '../../img/sponsor-pro-pharma.png'
 
 const sponsors = [
     {
@@ -130,6 +131,11 @@ const sponsors = [
         name: 'Australian Open',
         url: 'https://ausopen.com/',
         img: ao,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'ProPharma Group',
+        url: 'https://www.propharmagroup.com/',
+        img: propharma,
         info: 'Supporting Ava\'s Gala night. Thank you!'
     },{
         name: 'Glam Corner',
