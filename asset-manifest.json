@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.7e2fc0bf.css",
   "main.css.map": "static/css/main.7e2fc0bf.css.map",
-  "main.js": "static/js/main.9145d914.js",
-  "main.js.map": "static/js/main.9145d914.js.map",
+  "main.js": "static/js/main.2403f566.js",
+  "main.js.map": "static/js/main.2403f566.js.map",
   "static/media/ava-sq.jpg": "static/media/ava-sq.a4364d72.jpg",
   "static/media/ava.jpg": "static/media/ava.9af4dfd5.jpg",
   "static/media/ballroom-bg-2.jpg": "static/media/ballroom-bg-2.e086b647.jpg",
@@ -80,5 +80,8 @@
   "static/media/sponsor-taylormade.png": "static/media/sponsor-taylormade.c35fd63b.png",
   "static/media/sponsor-trulys.jpg": "static/media/sponsor-trulys.1c148a73.jpg",
   "static/media/sponsor-xtendbarre.png": "static/media/sponsor-xtendbarre.2d0f9f7b.png",
-  "static/media/sponsors-7e.png": "static/media/sponsors-7e.c60b2f53.png"
+  "static/media/sponsors-7e.png": "static/media/sponsors-7e.c60b2f53.png",
+  "static/media/sponsors-cocon.png": "static/media/sponsors-cocon.3b992947.png",
+  "static/media/sponsors-fresco.png": "static/media/sponsors-fresco.9e2ddb65.png",
+  "static/media/sponsors-tennis-aus.png": "static/media/sponsors-tennis-aus.e1423e66.png"
 }
