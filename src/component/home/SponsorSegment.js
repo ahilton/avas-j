@@ -61,6 +61,12 @@ import ao from '../../img/sponsor-ao.png'
 import prol from '../../img/sponsor-prol.png'
 import propharma from '../../img/sponsor-pro-pharma.png'
 
+import cocon from '../../img/sponsors-cocon.png'
+import electrolux from '../../img/sponsors-electrolux.png'
+import fresco from '../../img/sponsors-fresco.png'
+import tennisaus from '../../img/sponsors-tennis-aus.png'
+import torello from '../../img/sponsors-torello.png'
+
 const sponsors = [
     {
         name: 'Studio Gallery Melbourne',
@@ -131,6 +137,31 @@ const sponsors = [
         name: 'Australian Open',
         url: 'https://ausopen.com/',
         img: ao,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    }, {
+        name: 'co conspirators',
+        url: 'http://coconspirators.com.au/',
+        img: cocon,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Electrolux',
+        url: 'https://www.electrolux.com.au/',
+        img: electrolux,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Fresco Images',
+        url: 'http://frescoimages.com/',
+        img: fresco,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Tennis Australia',
+        url: 'https://www.tennis.com.au/',
+        img: tennisaus,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Torello Farm',
+        url: 'https://www.torellofarm.com.au/',
+        img: torello,
         info: 'Supporting Ava\'s Gala night. Thank you!'
     },{
         name: 'ProPharma Group',
