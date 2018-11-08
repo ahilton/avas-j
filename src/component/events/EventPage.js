@@ -10,6 +10,7 @@ const EventPage = () => (
 
     <div className='eventPage' style={{backgroundColor: '#111', marginBottom: 0, padding: 0}}>
         <Responsive maxWidth={767}>
+
             <Segment textAlign='center' basic padded='very' style={{
                 marginTop: 0,
                 marginBottom: 0,
@@ -24,14 +25,26 @@ const EventPage = () => (
             </Segment>
         </Responsive>
         <Responsive minWidth={767}>
-            <Segment textAlign='center' basic padded='very' style={{
+            <Segment textAlign='center' basic style={{
                 marginTop: 0,
                 marginBottom: 0,
                 // backgroundColor: '#444'
             }}>
 
             </Segment>
+
         </Responsive>
+
+        <Segment textAlign='center' basic padded='very' style={{
+            // backgroundColor:'black'
+            marginBottom:20
+        }}>
+            <div style={{padding: '56.25% 0 0 0', position: 'relative'}}>
+                <iframe src="https://player.vimeo.com/video/298069613?autoplay=1&byline=0&portrait=0" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} frameBorder={0} webkitallowfullscreen mozallowfullscreen allowFullScreen >
+                </iframe>
+            </div>
+        </Segment>
+
         {/*<Responsive minWidth={767}>*/}
 
         {/*<Segment textAlign='center' basic style={{*/}
@@ -70,6 +83,7 @@ const EventPage = () => (
         {/*</Menu.Item>*/}
         {/*</Menu>*/}
         {/*</Segment>*/}
+
 
 
         <EventWidget {...{

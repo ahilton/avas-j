@@ -40,6 +40,14 @@ const GalaSegment = ({children, showDetail = false}) => (
                         />
                     </Responsive>
 
+                    {showDetail
+                        &&
+                    <div style={{padding: '56.25% 0 0 0', position: 'relative', marginTop:20, marginBottom:30}}>
+                        <iframe src="https://player.vimeo.com/video/298069613?autoplay=1&byline=0&portrait=0" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} frameBorder={0} webkitallowfullscreen mozallowfullscreen allowFullScreen >
+                        </iframe>
+                    </div>
+                    }
+                    {/*<p><a href="https://vimeo.com/298069613">Ava&#039;s Gala Invitation and Live Auction Items Sneak Peak | November 17th | Plaza Ballroom</a> from <a href="https://vimeo.com/user24960641">Paula Burton</a> on <a href="https://vimeo.com">Vimeo</a>.</p>*/}
 
                     {showDetail && <h3 className='normal' style={{
                         fontWeight: 300,
