@@ -4,17 +4,17 @@ import {Container, Grid, Image, Popup, Segment,} from 'semantic-ui-react'
 
 import grazing from '../../img/sponsor-grazing.png'
 import lion from '../../img/sponsor-lion.png'
-import gallery from '../../img/sponsor-sgm.jpeg'
+import gallery from '../../img/sponsor-sgm.png'
 import ff from '../../img/sponsor-ff.png'
 import gk from '../../img/sponsor-gamekeepers.png'
 import selements from '../../img/sponsors-7e.png'
 import mbb from '../../img/sponsor-mbb.png'
-import rmc from '../../img/sponsor-rmc.jpg'
+import rmc from '../../img/sponsor-rmc.png'
 import dairy from '../../img/sponsor-dairy.png'
 import sciclunas from '../../img/sponsor-sciclunas.png'
 import pharma from '../../img/sponsor-pharma.png'
 import projekt from '../../img/sponsor-projekt.jpg'
-import kao from '../../img/sponsor-kao.jpg'
+import kao from '../../img/sponsor-kao.png'
 import sam from '../../img/sponsor-winesam.png'
 import iga from '../../img/sponsor-iga.png'
 import afl from '../../img/sponsor-afl.png'
@@ -38,7 +38,7 @@ import audioActive from '../../img/sponsor-audioActive.png'
 import bull from '../../img/sponsor-bull.jpg'
 import cBlank from '../../img/sponsor-cBlank.png'
 import colling from '../../img/sponsor-colling.jpg'
-import hawks from '../../img/sponsor-hawks.jpg'
+import hawks from '../../img/sponsor-hawks.png'
 import jag from '../../img/sponsor-jag.png'
 import kallure from '../../img/sponsor-kallure.png'
 import pa from '../../img/sponsor-pa.png'
@@ -64,10 +64,10 @@ import electrolux from '../../img/sponsors-electrolux.png'
 import fresco from '../../img/sponsors-fresco.png'
 import tennisaus from '../../img/sponsors-tennis-aus.png'
 import torello from '../../img/sponsors-torello.png'
-import cassy from '../../img/sponsors-cassy.jpg'
-import ferrari from '../../img/sponsor-ferrari.jpg'
-import clicceleb from '../../img/sponsor-clicceleb.jpg'
-import diamond from '../../img/sponsor-diamond.jpg'
+import cassy from '../../img/sponsors-cassy.png'
+import ferrari from '../../img/sponsor-ferrari.png'
+import clicceleb from '../../img/sponsor-clicceleb.png'
+import diamond from '../../img/sponsor-diamond.png'
 import molton from '../../img/sponsor-molton.png'
 import just from '../../img/sponsor-justgroup.gif'
 import kirsten from '../../img/sponsor-kirsten.png'
@@ -80,13 +80,19 @@ import converse from '../../img/sponsor-converse.png'
 import merlin from '../../img/sponsor-merlin.png'
 import sealife from '../../img/sponsor-sealife.png'
 import cablepark from '../../img/sponsor-cablepark.png'
-import smiggle from '../../img/sponsor-smiggle.jpeg'
+import smiggle from '../../img/sponsor-smiggle.png'
 import biozet from '../../img/sponsor-biozet.png'
 import tilnak from '../../img/sponsor-tilnak.png'
 import kms from '../../img/sponsor-kms.png'
 import jergens from '../../img/sponsor-jergens.png'
 import jfrieda from '../../img/sponsor-jfrieda.png'
 import biore from '../../img/sponsor-biore.png'
+
+import ausgp from '../../img/sponsor-aus-gp.png'
+import blackrockcellars from '../../img/sponsor-blackrockcellars.jpg'
+import dius from '../../img/sponsor-dius.png'
+import galaFund from '../../img/sponsor-gala-fund.png'
+import wilddog from '../../img/sponsor-wilddog.png'
 
 const sponsors = [
     {
@@ -144,8 +150,32 @@ const sponsors = [
         url: 'https://www.peninsulagrammar.vic.edu.au/',
         img: grammar,
         info: 'Supporting Ava\'s Gala night. Thank you!'
-    },
-    {
+    },{
+        name: 'Australian Grand Prix Corporation',
+        url: 'https://www.grandprix.com.au/',
+        img: ausgp,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Blackrock Cellars',
+        // url: 'https://www.peninsulagrammar.vic.edu.au/',
+        img: blackrockcellars,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'DiUS',
+        url: 'https://dius.com.au/',
+        img: dius,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Gala Fundraising',
+        url: 'http://www.galafundraising.com.au/',
+        img: galaFund,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    },{
+        name: 'Wilddog',
+        url: 'http://www.wilddogwinery.com/',
+        img: wilddog,
+        info: 'Supporting Ava\'s Gala night. Thank you!'
+    }, {
         name: 'Flowers By Cassy',
         url: 'https://flowersbycassy.com/',
         img: cassy,
