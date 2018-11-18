@@ -96,14 +96,14 @@ const FriendsLayout = () => (
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
-        <GalaSegment showDetail/>
+        {/*<GalaSegment showDetail/>*/}
         <FAQSegment/>
         <Video10Segment detail>
             <div style={{marginTop: 40}}>
                 <Link to="/press"><Button inverted size='massive'>More...</Button></Link>
             </div>
         </Video10Segment>
-        <Thermometer/>
+        {/*<Thermometer/>*/}
         <InstagramSegment/>
         {/*<Responsive minWidth={Responsive.onlyMobile.maxWidth}>*/}
         {/*<SponsorSegment size='small'/>*/}

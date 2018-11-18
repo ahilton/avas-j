@@ -87,12 +87,12 @@ const EventPage = () => (
 
 
         <EventWidget {...{
-            bookingLink: <Button as='a' color='yellow' href='http://avasgala.eventbrite.com.au/' size='massive' style={{
-                // backgroundColor:'#d77591'
-            }}>
-                <Icon name='ticket'/>
-                Book Now
-            </Button>,
+            // bookingLink: <Button as='a' color='yellow' href='http://avasgala.eventbrite.com.au/' size='massive' style={{
+            //     // backgroundColor:'#d77591'
+            // }}>
+            //     <Icon name='ticket'/>
+            //     Book Now
+            // </Button>,
             eventLink: 'galaEvent',
             eventCell: <GalaSegment/>,
             eventDate: [<span>Saturday 17<sup>th</sup> Nov</span>, '6:30pm - 11:30pm'],
@@ -144,11 +144,11 @@ const EventPage = () => (
                     your participation is truly life-saving.
                 </p>
                 <p style={{textAlign: 'center'}}>
-                    <Button as='a' color='yellow' href='http://avasgala.eventbrite.com.au/' size='huge' style={{
-                        backgroundColor: '#f4d378', color: 'black', margin: '1em'
-                    }}><Icon name='ticket'/>
-                        Book Tickets Now
-                    </Button>
+                    {/*<Button as='a' color='yellow' href='http://avasgala.eventbrite.com.au/' size='huge' style={{*/}
+                        {/*backgroundColor: '#f4d378', color: 'black', margin: '1em'*/}
+                    {/*}}><Icon name='ticket'/>*/}
+                        {/*Book Tickets Now*/}
+                    {/*</Button>*/}
                 </p>
 
                 <p>

@@ -79,11 +79,11 @@ const GalaSegment = ({children, showDetail = false}) => (
                         {/*<Icon name='ticket'/>*/}
                         {/*Book Now*/}
                         {/*</Button>*/}
-                        <Button as='a' color='yellow' href='http://avasgala.eventbrite.com.au/' size='huge' style={{
-                            backgroundColor: '#f4d378', color: 'black', margin: '1em'
-                        }}><Icon name='ticket'/>
-                            Book Tickets Now
-                        </Button>
+                        {/*<Button as='a' color='yellow' href='http://avasgala.eventbrite.com.au/' size='huge' style={{*/}
+                            {/*backgroundColor: '#f4d378', color: 'black', margin: '1em'*/}
+                        {/*}}><Icon name='ticket'/>*/}
+                            {/*Book Tickets Now*/}
+                        {/*</Button>*/}
                     </p>}
                     {!showDetail && <h3 className='normal' style={{
                         fontWeight: 300,
